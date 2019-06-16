@@ -1,0 +1,9 @@
+@import "css3-tools";
+
+@mixin user-select($select...) {
+  @include css3-prefixes(user-select, $select);
+}
+
+@mixin filter($filter...) {
+  @include css3-prefixes(filter, $filter);
+}

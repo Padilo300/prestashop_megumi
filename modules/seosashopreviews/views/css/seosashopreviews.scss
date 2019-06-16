@@ -1,0 +1,473 @@
+/**
+* 2007-2016 PrestaShop
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Academic Free License (AFL 3.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/afl-3.0.php
+* If you did not receive a copy of the license and are unable to
+* obtain it through the world-wide-web, please send an email
+* to license@prestashop.com so we can send you a copy immediately.
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+* versions in the future. If you wish to customize PrestaShop for your
+* needs please refer to http://www.prestashop.com for more information.
+*
+*  @author    SeoSA <885588@bk.ru>
+*  @copyright 2012-2017 SeoSA
+*  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*  International Registered Trademark & Property of PrestaShop SA
+*/
+@import "mixins";
+
+/*!
+ *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fontawesome-webfont.eot?v=4.3.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.text-center {
+  text-align: center;
+}
+
+#module-seosashopreviews-review .card {
+  background-color: #fff;
+  padding: 1.25rem;
+}
+
+.seosashopreviews {
+
+  .separator {
+    width: 30px;
+    height: 46px;
+    display: inline-block;
+  }
+
+  @media (max-width: 767px) {
+
+    &:not(.prestashop-1_5) {
+      & .block .title_block,
+      & .block h4 {
+        position: relative;
+      }
+
+      & .block .title_block:after,
+      & .block h4:after {
+        display: block;
+        font-family: "FontAwesome";
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 15px;
+        height: 36px;
+        width: 36px;
+        font-size: 26px;
+        font-weight: normal;
+      }
+      & .block .title_block.active:after,
+      & .block h4.active:after {
+        content: "";
+      }
+    }
+
+  }
+
+  &.home .title_block:after
+  {
+    display: none!important;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  .bx-wrapper {
+    .bx-pager, .bx-controls-auto {
+      position: relative;
+      bottom: 0;
+    }
+
+    .bx-viewport {
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      border: none;
+      left: 0;
+    }
+
+    .bx-controls-direction a {
+      z-index: 9999;
+    }
+
+    .bx-pager.bx-default-pager a {
+      background: #666;
+      text-indent: -9999px;
+      display: block;
+      width: 10px;
+      height: 10px;
+      margin: 0 5px;
+      outline: 0;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+    }
+
+    .bx-pager.bx-default-pager a:hover,
+    .bx-pager.bx-default-pager a.active {
+      background: #000;
+    }
+  }
+
+  .review {
+    .text {
+      padding: 10px 0;
+      .short-text {
+
+      }
+      .full-text {
+        display: none;
+      }
+    }
+
+  }
+
+  .block_content {
+    position: relative;
+    overflow: hidden;
+    min-height: 25px;
+
+    @include transform(translateZ(0));
+    @include transition(height 0.5s ease);
+  }
+
+  &.prestashop-1_5 {
+    .block_content {
+      margin-top: 15px;
+    }
+    .bx-wrapper {
+      margin: 0;
+    }
+    .bottom-pagination-content-sort-pagi-bar,
+    .top-pagination-content-sort-pagi-bar {
+      margin-top: 0;
+      .top-pagination-content > div.pagination {
+        margin-top: 0;
+      }
+    }
+
+    form {
+      .form-group {
+        vertical-align: top;
+        margin-bottom: 15px;
+        label {
+          display: inline-block;
+          vertical-align: top;
+
+        }
+      }
+    }
+
+    &.left {
+      .controls {
+        margin-top: -2px;
+      }
+    }
+  }
+
+  /* home */
+
+  &.home {
+    $form-height: 195px;
+
+    .reviews {
+      &:after {
+        content: '';
+        float: none;
+        clear: both;
+      }
+
+      .reviews-list {
+        border-bottom: none;
+        margin-bottom: 5px;
+
+        .review {
+          font-size: 0;
+          > a {
+            max-height: 100%;
+            display: inline-block;
+            max-width: 35%;
+            vertical-align: top;
+            img {
+              display: inline-block;
+              max-height: 100%;
+              max-width: 100%;
+            }
+          }
+          > .text {
+            font-size: 14px;
+            display: inline-block;
+            max-width: 65%;
+            padding: 0 10px;
+            .short-text,
+            .full-text {
+              display: inline-block;
+              text-align: left;
+              vertical-align: top;
+            }
+            .short-text + .full-text {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    form {
+      background: #fff;
+      position: absolute;
+      top: 0;
+      right: -100%;
+      height: 420px;
+      width: 100%;
+      padding: 0 10px;
+
+
+      @include transform(translateZ(0));
+      @include transition(right 0.5s ease);
+    }
+
+    .controls {
+      z-index: 50;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    &.form-visible {
+      .block_content {
+        height: 420px !important;
+      }
+      form {
+        right: 0;
+        z-index: 10000;
+      }
+      .controls {
+        display: none;
+      }
+    }
+  }
+
+  /* left */
+
+  &.left {
+    $form-height: 195px;
+
+    .block_content {
+      min-height: 300px;
+    }
+
+    .reviews {
+      &:after {
+        content: '';
+        float: none;
+        clear: both;
+      }
+
+      .reviews-list {
+        border-bottom: none;
+        margin-bottom: 5px;
+
+        .review {
+          > a {
+            display: block;
+            max-width: 100%;
+            padding: 0 5px;
+            img {
+              display: block;
+              max-height: 100%;
+              max-width: 100%;
+            }
+          }
+          > .text {
+            display: block;
+            max-width: 100%;
+            padding: 5px 5px 10px 5px;
+            .short-text,
+            .full-text {
+              display: inline-block;
+              text-align: left;
+              vertical-align: top;
+            }
+            .short-text + .full-text {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    form {
+      background: #fff;
+      position: absolute;
+      top: 100%;
+
+      width: 100%;
+      padding: 0 10px;
+
+      @include transform(translateZ(0));
+      @include transition(top 0.5s ease);
+
+      div.uploader span.filename {
+        width: 154px;
+      }
+    }
+
+    &.form-visible {
+      .block_content {
+      }
+      form {
+        top: 0;
+        display: block;
+        z-index: 10000;
+      }
+      .controls {
+        display: none;
+      }
+    }
+  }
+
+  /* standalone */
+
+  &.standalone {
+    .reviews {
+      &:after {
+        content: '';
+        float: none;
+        clear: both;
+      }
+
+      .reviews-list {
+        border-bottom: none;
+        margin-bottom: 5px;
+
+        .review {
+          padding-bottom: 10px;
+          margin-bottom: 10px;
+          border-bottom: 1px solid #ccc;
+          &:last-child {
+            margin-bottom: 0;
+            border-bottom: none;
+          }
+          a {
+            max-height: 100%;
+            display: inline-block;
+            vertical-align: top;
+            margin-bottom: 8px;
+
+            img {
+              max-width: 100%;
+            }
+          }
+
+          .text {
+            font-size: 14px;
+            display: inline-block;
+            max-width: 65%;
+            padding: 0;
+            margin-bottom: 5px;
+            .short-text,
+            .full-text {
+              display: inline-block;
+              text-align: left;
+              vertical-align: top;
+            }
+            .short-text + .full-text {
+              display: none;
+            }
+          }
+
+          label.text {
+            font-weight: bold;
+          }
+
+        }
+      }
+    }
+  }
+
+}
+
+.star_content {
+  float: left;
+}
+
+
+.star_content + .text {
+  padding: 0 10px !important;
+}
+
+
+.seosashopreviews_rating {
+  height: 1em;
+  margin-top: 1em;
+}
+
+.seosashopreviews .rating_label {
+  display: block;
+  float: left;
+  margin-right: 5px;
+  margin-top: -3px;
+}
+
+
+.seosashopreviews .star_sr {
+  display: block;
+  width: 16px;
+  height: 16px;
+  float: left;
+  background: url(../img/star.jpg) 0% 0% no-repeat ;
+  cursor: pointer;
+}
+
+.seosashopreviews .star_sr_on {
+  display: block;
+  width: 16px;
+  height: 16px;
+  float: left;
+  background: url(../img/star.jpg) 0% 100% no-repeat ;
+}
+
+.seosashopreviews .delete_star {
+  background: url(../img/delete.png) no-repeat 0 0 !important;
+  display: block;
+  width: 16px;
+  height: 16px;
+  float: left;
+}
+
+/* uploader */
+
+div.uploader input {
+  opacity: 1;
+  position: inherit;
+}
+
+div.uploader span.filename {
+  display: none;
+}
+
+div.uploader span.action {
+  display: none;
+}
+
+

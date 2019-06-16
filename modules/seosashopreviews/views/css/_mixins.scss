@@ -1,0 +1,21 @@
+@import "mixins/css3-annimation";
+@import "mixins/css3-flex";
+@import "mixins/css3-border-radius";
+@import "mixins/css3-box-shadow";
+@import "mixins/css3-transform";
+@import "mixins/css3-other";
+@import "mixins/css3-tools";
+
+@mixin cursor-to-all($cursor) {
+  cursor: $cursor;
+  * {
+    cursor: $cursor;
+  }
+}
+
+@mixin no-outline() {
+  outline: none;
+  &:hover, &:focus, &:active,  &:active:focus, &.active:focus {
+    outline: none;
+  }
+}

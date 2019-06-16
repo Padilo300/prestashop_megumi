@@ -1,0 +1,727 @@
+/*
+ * Custom code goes here.
+ * A template should always ship with an empty custom.css
+ */
+.atc_qty {
+    display: inline-block;
+    width: 40px;
+    border: 1px solid #cecece;
+    background: #FFF;
+    padding: 10px 0px;
+    text-align: center;
+    top: 2px;
+    margin: auto;
+    position: relative;
+    margin: 0px 5px 0px 0px;
+}
+
+.product-description {
+    min-height:130px;
+}
+
+#products .thumbnail-container {
+    min-height:368px;
+}
+
+.atc_div {
+    margin-top:10px;
+}
+
+
+.atc_spinner {
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 4000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 4000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 4000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+
+#products .thumbnail-container:hover .highlighted-informations, .featured-products .thumbnail-container:hover .highlighted-informations, .product-accessories .thumbnail-container:hover .highlighted-informations, .product-miniature .thumbnail-container:hover .highlighted-informations {
+    bottom: 9.525rem;
+}
+
+#products .highlighted-informations, .featured-products .highlighted-informations, .product-accessories .highlighted-informations, .product-miniature .highlighted-informations {
+    bottom: 5rem;
+}
+
+
+
+
+
+
+
+
+
+/*================== фильтр ============*/
+
+#search_filters,
+#search_filters_brands,
+#search_filters_suppliers {
+    box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, .2);
+    margin-bottom: 1.563rem;
+    background: #fff;
+    padding: 1.563rem 1.25rem
+}
+
+#search_filters .facet,
+#search_filters_brands .facet,
+#search_filters_suppliers .facet {
+    padding-top: .625rem
+}
+
+#search_filters .facet .collapse,
+#search_filters_brands .facet .collapse,
+#search_filters_suppliers .facet .collapse {
+    display: block
+}
+
+#search_filters .facet .facet-title,
+#search_filters_brands .facet .facet-title,
+#search_filters_suppliers .facet .facet-title {
+    color: #7a7a7a
+}
+
+#search_filters .facet .facet-label,
+#search_filters_brands .facet .facet-label,
+#search_filters_suppliers .facet .facet-label {
+    margin-bottom: 0
+}
+
+#search_filters .facet .facet-label a,
+#search_filters_brands .facet .facet-label a,
+#search_filters_suppliers .facet .facet-label a {
+    margin-top: .4375rem;
+    color: #232323;
+    display: inline-block;
+    font-size: .9375rem
+}
+
+#search_filters_brands .facet,
+#search_filters_suppliers .facet {
+    padding-top: 0
+}
+
+#search_filters_brands .facet .facet-label,
+#search_filters_suppliers .facet .facet-label {
+    margin-bottom: .3125rem
+}
+
+/*==================================================*/
+
+/*=============== сортировка товара ===========*/
+
+
+.products-sort-order {
+    color: #7a7a7a
+}
+
+.products-sort-order .select-title {
+    display: inline-block;
+    width: 100%;
+    color: #232323;
+    background: #fff;
+    padding: .625rem;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, .25);
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, .2)
+}
+
+.products-sort-order .select-list {
+    display: block;
+    color: #232323;
+    padding: .625rem 1.25rem
+}
+
+.products-sort-order .select-list:hover {
+    background: #2fb5d2;
+    color: #fff;
+    text-decoration: none
+}
+
+.products-sort-order .dropdown-menu {
+    left: auto;
+    width: 16.88rem;
+    background: #f6f6f6;
+    border: none;
+    border-radius: 0;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, .1);
+    margin: 0
+}
+
+.facet-dropdown {
+    color: #7a7a7a;
+    padding-left: 0;
+    padding-right: 0;
+    background: #f1f1f1;
+    border: 3px solid transparent;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 1px 1px #f1f1f1
+}
+
+.facet-dropdown.open {
+    border: 0
+}
+
+.facet-dropdown.open>.select-title {
+    border: 3px solid #2fb5d2;
+    background: #f6f6f6
+}
+
+.facet-dropdown .select-title {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 0;
+    width: 100%;
+    color: #232323;
+    background: #f1f1f1;
+    padding: .625rem .625rem .625rem 1.25rem;
+    cursor: pointer
+}
+
+.facet-dropdown .select-title>i {
+    margin-left: auto
+}
+
+.facet-dropdown .select-list {
+    display: block;
+    color: #232323;
+    background: #f6f6f6;
+    padding: .625rem 1.25rem
+}
+
+.facet-dropdown .select-list:hover {
+    background: #2fb5d2;
+    color: #fff;
+    text-decoration: none
+}
+
+.facet-dropdown .dropdown-menu {
+    padding: 0;
+    margin-top: 3px;
+    left: auto;
+    width: 100%;
+    background: #f6f6f6;
+    border: none;
+    box-shadow: 1px 1px 1px 1px #f1f1f1
+}
+/*===================================*/
+
+
+
+
+
+
+
+/*===================== модалка ==================*/
+
+
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto
+}
+
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: .3rem;
+    outline: 0
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000
+}
+
+.modal-backdrop.fade {
+    opacity: 0
+}
+
+.modal-backdrop.in {
+    opacity: .5
+}
+
+.modal-header {
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5
+}
+
+.modal-header:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.modal-header .close {
+    margin-top: -2px
+}
+
+.modal-title {
+    margin: 0;
+    line-height: 1.5
+}
+
+.modal-body {
+    position: relative;
+    padding: 15px
+}
+
+.modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5
+}
+
+.modal-footer:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.modal-scrollbar-measure {
+    position: absolute;
+    top: -9999px;
+    width: 50px;
+    height: 50px;
+    overflow: scroll
+}
+
+@media (min-width:576px) {
+    .modal-dialog {
+        max-width: 600px;
+        margin: 30px auto
+    }
+    .modal-sm {
+        max-width: 300px
+    }
+}
+
+@media (min-width:992px) {
+    .modal-lg {
+        max-width: 900px
+    }
+}
+
+
+/*============= товар ===============*/
+
+
+#products .product-miniature,
+.featured-products .product-miniature,
+.product-accessories .product-miniature,
+.product-miniature .product-miniature {
+    margin: 0 .625rem
+}
+
+#products .product-miniature .discount,
+.featured-products .product-miniature .discount,
+.product-accessories .product-miniature .discount,
+.product-miniature .product-miniature .discount {
+    display: none
+}
+
+#products .product-miniature .discount-amount,
+#products .product-miniature .discount-percentage,
+#products .product-miniature .on-sale,
+#products .product-miniature .online-only,
+#products .product-miniature .pack,
+#products .product-miniature .product-flags .new,
+.featured-products .product-miniature .discount-amount,
+.featured-products .product-miniature .discount-percentage,
+.featured-products .product-miniature .on-sale,
+.featured-products .product-miniature .online-only,
+.featured-products .product-miniature .pack,
+.featured-products .product-miniature .product-flags .new,
+.product-accessories .product-miniature .discount-amount,
+.product-accessories .product-miniature .discount-percentage,
+.product-accessories .product-miniature .on-sale,
+.product-accessories .product-miniature .online-only,
+.product-accessories .product-miniature .pack,
+.product-accessories .product-miniature .product-flags .new,
+.product-miniature .product-miniature .discount-amount,
+.product-miniature .product-miniature .discount-percentage,
+.product-miniature .product-miniature .on-sale,
+.product-miniature .product-miniature .online-only,
+.product-miniature .product-miniature .pack,
+.product-miniature .product-miniature .product-flags .new {
+    display: block;
+    position: absolute;
+    left: -.4375rem;
+    padding: .3125rem .4375rem;
+    color: #fff;
+    background: #2fb5d2;
+    text-transform: uppercase;
+    min-width: 3.125rem;
+    min-height: 1.875rem;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, .2)
+}
+
+#products .product-miniature .discount-amount.discount-amount,
+#products .product-miniature .discount-amount.discount-percentage,
+#products .product-miniature .discount-percentage.discount-amount,
+#products .product-miniature .discount-percentage.discount-percentage,
+#products .product-miniature .on-sale.discount-amount,
+#products .product-miniature .on-sale.discount-percentage,
+#products .product-miniature .online-only.discount-amount,
+#products .product-miniature .online-only.discount-percentage,
+#products .product-miniature .pack.discount-amount,
+#products .product-miniature .pack.discount-percentage,
+#products .product-miniature .product-flags .new.discount-amount,
+#products .product-miniature .product-flags .new.discount-percentage,
+.featured-products .product-miniature .discount-amount.discount-amount,
+.featured-products .product-miniature .discount-amount.discount-percentage,
+.featured-products .product-miniature .discount-percentage.discount-amount,
+.featured-products .product-miniature .discount-percentage.discount-percentage,
+.featured-products .product-miniature .on-sale.discount-amount,
+.featured-products .product-miniature .on-sale.discount-percentage,
+.featured-products .product-miniature .online-only.discount-amount,
+.featured-products .product-miniature .online-only.discount-percentage,
+.featured-products .product-miniature .pack.discount-amount,
+.featured-products .product-miniature .pack.discount-percentage,
+.featured-products .product-miniature .product-flags .new.discount-amount,
+.featured-products .product-miniature .product-flags .new.discount-percentage,
+.product-accessories .product-miniature .discount-amount.discount-amount,
+.product-accessories .product-miniature .discount-amount.discount-percentage,
+.product-accessories .product-miniature .discount-percentage.discount-amount,
+.product-accessories .product-miniature .discount-percentage.discount-percentage,
+.product-accessories .product-miniature .on-sale.discount-amount,
+.product-accessories .product-miniature .on-sale.discount-percentage,
+.product-accessories .product-miniature .online-only.discount-amount,
+.product-accessories .product-miniature .online-only.discount-percentage,
+.product-accessories .product-miniature .pack.discount-amount,
+.product-accessories .product-miniature .pack.discount-percentage,
+.product-accessories .product-miniature .product-flags .new.discount-amount,
+.product-accessories .product-miniature .product-flags .new.discount-percentage,
+.product-miniature .product-miniature .discount-amount.discount-amount,
+.product-miniature .product-miniature .discount-amount.discount-percentage,
+.product-miniature .product-miniature .discount-percentage.discount-amount,
+.product-miniature .product-miniature .discount-percentage.discount-percentage,
+.product-miniature .product-miniature .on-sale.discount-amount,
+.product-miniature .product-miniature .on-sale.discount-percentage,
+.product-miniature .product-miniature .online-only.discount-amount,
+.product-miniature .product-miniature .online-only.discount-percentage,
+.product-miniature .product-miniature .pack.discount-amount,
+.product-miniature .product-miniature .pack.discount-percentage,
+.product-miniature .product-miniature .product-flags .new.discount-amount,
+.product-miniature .product-miniature .product-flags .new.discount-percentage {
+    z-index: 2;
+    background: #f39d72
+}
+
+#products .product-miniature .discount-amount.on-sale,
+#products .product-miniature .discount-percentage.on-sale,
+#products .product-miniature .on-sale.on-sale,
+#products .product-miniature .online-only.on-sale,
+#products .product-miniature .pack.on-sale,
+#products .product-miniature .product-flags .new.on-sale,
+.featured-products .product-miniature .discount-amount.on-sale,
+.featured-products .product-miniature .discount-percentage.on-sale,
+.featured-products .product-miniature .on-sale.on-sale,
+.featured-products .product-miniature .online-only.on-sale,
+.featured-products .product-miniature .pack.on-sale,
+.featured-products .product-miniature .product-flags .new.on-sale,
+.product-accessories .product-miniature .discount-amount.on-sale,
+.product-accessories .product-miniature .discount-percentage.on-sale,
+.product-accessories .product-miniature .on-sale.on-sale,
+.product-accessories .product-miniature .online-only.on-sale,
+.product-accessories .product-miniature .pack.on-sale,
+.product-accessories .product-miniature .product-flags .new.on-sale,
+.product-miniature .product-miniature .discount-amount.on-sale,
+.product-miniature .product-miniature .discount-percentage.on-sale,
+.product-miniature .product-miniature .on-sale.on-sale,
+.product-miniature .product-miniature .online-only.on-sale,
+.product-miniature .product-miniature .pack.on-sale,
+.product-miniature .product-miniature .product-flags .new.on-sale {
+    background: #f39d72;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    top: 0
+}
+
+#products .product-miniature .discount-amount.online-only,
+#products .product-miniature .discount-percentage.online-only,
+#products .product-miniature .on-sale.online-only,
+#products .product-miniature .online-only.online-only,
+#products .product-miniature .pack.online-only,
+#products .product-miniature .product-flags .new.online-only,
+.featured-products .product-miniature .discount-amount.online-only,
+.featured-products .product-miniature .discount-percentage.online-only,
+.featured-products .product-miniature .on-sale.online-only,
+.featured-products .product-miniature .online-only.online-only,
+.featured-products .product-miniature .pack.online-only,
+.featured-products .product-miniature .product-flags .new.online-only,
+.product-accessories .product-miniature .discount-amount.online-only,
+.product-accessories .product-miniature .discount-percentage.online-only,
+.product-accessories .product-miniature .on-sale.online-only,
+.product-accessories .product-miniature .online-only.online-only,
+.product-accessories .product-miniature .pack.online-only,
+.product-accessories .product-miniature .product-flags .new.online-only,
+.product-miniature .product-miniature .discount-amount.online-only,
+.product-miniature .product-miniature .discount-percentage.online-only,
+.product-miniature .product-miniature .on-sale.online-only,
+.product-miniature .product-miniature .online-only.online-only,
+.product-miniature .product-miniature .pack.online-only,
+.product-miniature .product-miniature .product-flags .new.online-only {
+    font-size: .8125rem;
+    margin-top: 13rem;
+    margin-left: 8.688rem
+}
+
+#products .product-miniature .discount-amount.online-only:before,
+#products .product-miniature .discount-percentage.online-only:before,
+#products .product-miniature .on-sale.online-only:before,
+#products .product-miniature .online-only.online-only:before,
+#products .product-miniature .pack.online-only:before,
+#products .product-miniature .product-flags .new.online-only:before,
+.featured-products .product-miniature .discount-amount.online-only:before,
+.featured-products .product-miniature .discount-percentage.online-only:before,
+.featured-products .product-miniature .on-sale.online-only:before,
+.featured-products .product-miniature .online-only.online-only:before,
+.featured-products .product-miniature .pack.online-only:before,
+.featured-products .product-miniature .product-flags .new.online-only:before,
+.product-accessories .product-miniature .discount-amount.online-only:before,
+.product-accessories .product-miniature .discount-percentage.online-only:before,
+.product-accessories .product-miniature .on-sale.online-only:before,
+.product-accessories .product-miniature .online-only.online-only:before,
+.product-accessories .product-miniature .pack.online-only:before,
+.product-accessories .product-miniature .product-flags .new.online-only:before,
+.product-miniature .product-miniature .discount-amount.online-only:before,
+.product-miniature .product-miniature .discount-percentage.online-only:before,
+.product-miniature .product-miniature .on-sale.online-only:before,
+.product-miniature .product-miniature .online-only.online-only:before,
+.product-miniature .product-miniature .pack.online-only:before,
+.product-miniature .product-miniature .product-flags .new.online-only:before {
+    content: "\E30A";
+    font-family: Material Icons;
+    vertical-align: middle;
+    margin: .3125rem
+}
+
+#products .comments_note,
+.featured-products .comments_note,
+.product-accessories .comments_note,
+.product-miniature .comments_note {
+    text-align: center;
+    color: #7a7a7a
+}
+
+#products .regular-price,
+.featured-products .regular-price,
+.product-accessories .regular-price,
+.product-miniature .regular-price {
+    color: #7a7a7a;
+    text-decoration: line-through;
+    font-size: .875rem
+}
+
+#products .count,
+.featured-products .count,
+.product-accessories .count,
+.product-miniature .count {
+    color: #7a7a7a;
+    font-weight: 700;
+    position: relative;
+    bottom: .5rem
+}
+
+#products .all-product-link,
+.featured-products .all-product-link,
+.product-accessories .all-product-link,
+.product-miniature .all-product-link {
+    clear: both;
+    color: #7a7a7a;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem
+}
+
+@media (max-width:767px) {
+    #products .thumbnail-container,
+    .featured-products .thumbnail-container,
+    .product-accessories .thumbnail-container {
+        box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, .2)
+    }
+    #products .thumbnail-container .product-description,
+    .featured-products .thumbnail-container .product-description,
+    .product-accessories .thumbnail-container .product-description {
+        box-shadow: 0 -5px 10px -5px rgba(0, 0, 0, .2)
+    }
+}
+
+
+/* ===== модалка быстрого просмотра товара ======= */
+
+.quickview.in{
+    opacity: 1 !important;
+}
+
+.quickview .modal-dialog {
+    width: calc(100% - 30px);
+    max-width: 64rem
+}
+
+.quickview .modal-content {
+    background: #f1f1f1;
+    min-height: 28.13rem
+}
+
+.quickview .modal-header {
+    border: none;
+    padding: .625rem
+}
+
+.quickview .modal-body {
+    min-height: 23.75rem
+}
+
+.quickview .modal-footer {
+    border-top: 1px solid hsla(0, 0%, 48%, .3)
+}
+
+.quickview .layer {
+    display: none
+}
+
+.quickview .product-cover img {
+    width: 95%
+}
+
+.quickview .images-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 1;
+    min-height: 21.88rem
+}
+
+.quickview .images-container .product-images>li.thumb-container>.thumb {
+    width: 100%;
+    max-width: 4.938rem;
+    margin-bottom: .8125rem;
+    background: #fff
+}
+
+.quickview .mask {
+    width: 35%;
+    max-height: 22.5rem;
+    overflow: hidden;
+    margin-left: .625rem
+}
+
+.quickview .arrows {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    max-height: 22.5rem;
+    right: 5rem;
+    z-index: 0
+}
+
+.quickview .arrows .arrow-up {
+    margin-top: -3.125rem;
+    cursor: pointer;
+    opacity: .2
+}
+
+.quickview .arrows .arrow-down {
+    position: absolute;
+    bottom: -1.875rem;
+    cursor: pointer
+}
+
+.quickview .social-sharing {
+    margin-top: 0;
+    margin-left: 2.5rem
+}
+
+/*=============== сортировка =======*/
+
+
+.products-sort-order {
+    color: #7a7a7a
+}
+
+.products-sort-order .select-title {
+    display: inline-block;
+    width: 100%;
+    color: #232323;
+    background: #fff;
+    padding: .625rem;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, .25);
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, .2)
+}
+
+.products-sort-order .select-list {
+    display: block;
+    color: #232323;
+    padding: .625rem 1.25rem
+}
+
+.products-sort-order .select-list:hover {
+    background: #2fb5d2;
+    color: #fff;
+    text-decoration: none
+}
+
+.products-sort-order .dropdown-menu {
+    left: auto;
+    width: 16.88rem;
+    background: #f6f6f6;
+    border: none;
+    border-radius: 0;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, .1);
+    margin: 0
+}

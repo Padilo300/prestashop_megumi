@@ -1,0 +1,42 @@
+@import "css3-tools";
+
+@mixin border-bottom-left-radius($radius) {
+  @include css3-prefixes(border-bottom-left-radius, $radius);
+}
+
+@mixin border-bottom-right-radius($radius) {
+  @include css3-prefixes(border-bottom-right-radius, $radius);
+}
+
+@mixin border-top-left-radius($radius) {
+  @include css3-prefixes(border-top-left-radius, $radius);
+}
+
+@mixin border-top-right-radius($radius) {
+  @include css3-prefixes(border-top-right-radius, $radius);
+}
+
+@mixin border-bottom-radius($radius) {
+  @include border-bottom-left-radius($radius);
+  @include border-bottom-right-radius($radius);
+}
+
+@mixin border-top-radius($radius) {
+  @include border-top-left-radius($radius);
+  @include border-top-right-radius($radius);
+}
+
+
+@mixin border-left-radius($radius) {
+  @include border-top-left-radius($radius);
+  @include border-bottom-left-radius($radius);
+}
+
+@mixin border-right-radius($radius) {
+  @include border-top-right-radius($radius);
+  @include border-bottom-right-radius($radius);
+}
+
+@mixin border-radius($radius) {
+  @include css3-prefixes(border-radius, $radius);
+}

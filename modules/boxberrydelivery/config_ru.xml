@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>boxberrydelivery</name>
+    <displayName><![CDATA[Доставка с помощью Boxberry]]></displayName>
+    <version><![CDATA[2.3.4]]></version>
+    <description><![CDATA[Добавляет возможность покупателю выбирать пункты выдачи Boxberry.]]></description>
+    <author><![CDATA[zapalm]]></author>
+    <tab><![CDATA[shipping_logistics]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

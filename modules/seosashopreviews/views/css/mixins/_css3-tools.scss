@@ -1,0 +1,6 @@
+@mixin css3-prefixes($property, $value, $prefixes: ('webkit', 'moz', 'ms', 'o')) {
+  @each $prefix in $prefixes {
+    -#{$prefix}-#{$property}: $value;
+  }
+  #{$property}: $value;
+}

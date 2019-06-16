@@ -1,0 +1,5 @@
+@import "css3-tools";
+
+@mixin box-shadow($shadow...) {
+  @include css3-prefixes(box-shadow, $shadow);
+}

@@ -1,0 +1,45 @@
+@import "css3-tools";
+
+@mixin transition($transition...) {
+  @include css3-prefixes(transition, $transition);
+}
+
+@mixin transition-property($properties...) {
+  @include css3-prefixes(transition-property, $properties);
+}
+
+@mixin animation($properties...) {
+  @include css3-prefixes(animation, $properties);
+}
+
+@mixin animation-duration($duration...) {
+  @include css3-prefixes(animation-duration, $duration);
+}
+
+@mixin animation-name($name...) {
+  @include css3-prefixes(animation-name, $name);
+}
+
+@mixin animation-delay($delay...) {
+  @include css3-prefixes(animation-delay, $delay);
+}
+
+@mixin animation-timing-function($function...) {
+  @include css3-prefixes(animation-timing-function, $function);
+}
+
+@mixin animation-iteration-count($count...) {
+  @include css3-prefixes(animation-iteration-count, $count);
+}
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}

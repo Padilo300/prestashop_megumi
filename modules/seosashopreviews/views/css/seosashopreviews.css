@@ -1,0 +1,331 @@
+@charset "IBM866";
+/**
+* 2007-2016 PrestaShop
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Academic Free License (AFL 3.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/afl-3.0.php
+* If you did not receive a copy of the license and are unable to
+* obtain it through the world-wide-web, please send an email
+* to license@prestashop.com so we can send you a copy immediately.
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+* versions in the future. If you wish to customize PrestaShop for your
+* needs please refer to http://www.prestashop.com for more information.
+*
+*  @author    SeoSA <885588@bk.ru>
+*  @copyright 2012-2017 SeoSA
+*  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*  International Registered Trademark & Property of PrestaShop SA
+*/
+/*
+ *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fontawesome-webfont.eot?v=4.3.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.text-center {
+  text-align: center; }
+
+#module-seosashopreviews-review .card {
+  background-color: #fff;
+  padding: 1.25rem; }
+
+.seosashopreviews {
+  /* home */
+  /* left */
+  /* standalone */ }
+  .seosashopreviews .separator {
+    width: 30px;
+    height: 46px;
+    display: inline-block; }
+  @media (max-width: 767px) {
+    .seosashopreviews:not(.prestashop-1_5) .block .title_block, .seosashopreviews:not(.prestashop-1_5) .block h4 {
+      position: relative; }
+    .seosashopreviews:not(.prestashop-1_5) .block .title_block:after, .seosashopreviews:not(.prestashop-1_5) .block h4:after {
+      display: block;
+      font-family: "FontAwesome";
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 15px;
+      height: 36px;
+      width: 36px;
+      font-size: 26px;
+      font-weight: normal; }
+    .seosashopreviews:not(.prestashop-1_5) .block .title_block.active:after, .seosashopreviews:not(.prestashop-1_5) .block h4.active:after {
+      content: ""; } }
+  .seosashopreviews.home .title_block:after {
+    display: none !important; }
+  .seosashopreviews * {
+    box-sizing: border-box; }
+  .seosashopreviews .bx-wrapper .bx-pager, .seosashopreviews .bx-wrapper .bx-controls-auto {
+    position: relative;
+    bottom: 0; }
+  .seosashopreviews .bx-wrapper .bx-viewport {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    left: 0; }
+  .seosashopreviews .bx-wrapper .bx-controls-direction a {
+    z-index: 9999; }
+  .seosashopreviews .bx-wrapper .bx-pager.bx-default-pager a {
+    background: #666;
+    text-indent: -9999px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    outline: 0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; }
+  .seosashopreviews .bx-wrapper .bx-pager.bx-default-pager a:hover,
+  .seosashopreviews .bx-wrapper .bx-pager.bx-default-pager a.active {
+    background: #000; }
+  .seosashopreviews .review .text {
+    padding: 10px 0; }
+    .seosashopreviews .review .text .full-text {
+      display: none; }
+  .seosashopreviews .block_content {
+    position: relative;
+    overflow: hidden;
+    min-height: 25px;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition: height 0.5s ease;
+    -moz-transition: height 0.5s ease;
+    -ms-transition: height 0.5s ease;
+    -o-transition: height 0.5s ease;
+    transition: height 0.5s ease; }
+  .seosashopreviews.prestashop-1_5 .block_content {
+    margin-top: 15px; }
+  .seosashopreviews.prestashop-1_5 .bx-wrapper {
+    margin: 0; }
+  .seosashopreviews.prestashop-1_5 .bottom-pagination-content-sort-pagi-bar,
+  .seosashopreviews.prestashop-1_5 .top-pagination-content-sort-pagi-bar {
+    margin-top: 0; }
+    .seosashopreviews.prestashop-1_5 .bottom-pagination-content-sort-pagi-bar .top-pagination-content > div.pagination,
+    .seosashopreviews.prestashop-1_5 .top-pagination-content-sort-pagi-bar .top-pagination-content > div.pagination {
+      margin-top: 0; }
+  .seosashopreviews.prestashop-1_5 form .form-group {
+    vertical-align: top;
+    margin-bottom: 15px; }
+    .seosashopreviews.prestashop-1_5 form .form-group label {
+      display: inline-block;
+      vertical-align: top; }
+  .seosashopreviews.prestashop-1_5.left .controls {
+    margin-top: -2px; }
+  .seosashopreviews.home .reviews:after {
+    content: '';
+    float: none;
+    clear: both; }
+  .seosashopreviews.home .reviews .reviews-list {
+    border-bottom: none;
+    margin-bottom: 5px; }
+    .seosashopreviews.home .reviews .reviews-list .review {
+      font-size: 0; }
+      .seosashopreviews.home .reviews .reviews-list .review > a {
+        max-height: 100%;
+        display: inline-block;
+        max-width: 35%;
+        vertical-align: top; }
+        .seosashopreviews.home .reviews .reviews-list .review > a img {
+          display: inline-block;
+          max-height: 100%;
+          max-width: 100%; }
+      .seosashopreviews.home .reviews .reviews-list .review > .text {
+        font-size: 14px;
+        display: inline-block;
+        max-width: 65%;
+        padding: 0 10px; }
+        .seosashopreviews.home .reviews .reviews-list .review > .text .short-text,
+        .seosashopreviews.home .reviews .reviews-list .review > .text .full-text {
+          display: inline-block;
+          text-align: left;
+          vertical-align: top; }
+        .seosashopreviews.home .reviews .reviews-list .review > .text .short-text + .full-text {
+          display: none; }
+  .seosashopreviews.home form {
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    height: 420px;
+    width: 100%;
+    padding: 0 10px;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition: right 0.5s ease;
+    -moz-transition: right 0.5s ease;
+    -ms-transition: right 0.5s ease;
+    -o-transition: right 0.5s ease;
+    transition: right 0.5s ease; }
+  .seosashopreviews.home .controls {
+    z-index: 50;
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+  .seosashopreviews.home.form-visible .block_content {
+    height: 420px !important; }
+  .seosashopreviews.home.form-visible form {
+    right: 0;
+    z-index: 10000; }
+  .seosashopreviews.home.form-visible .controls {
+    display: none; }
+  .seosashopreviews.left .block_content {
+    min-height: 300px; }
+  .seosashopreviews.left .reviews:after {
+    content: '';
+    float: none;
+    clear: both; }
+  .seosashopreviews.left .reviews .reviews-list {
+    border-bottom: none;
+    margin-bottom: 5px; }
+    .seosashopreviews.left .reviews .reviews-list .review > a {
+      display: block;
+      max-width: 100%;
+      padding: 0 5px; }
+      .seosashopreviews.left .reviews .reviews-list .review > a img {
+        display: block;
+        max-height: 100%;
+        max-width: 100%; }
+    .seosashopreviews.left .reviews .reviews-list .review > .text {
+      display: block;
+      max-width: 100%;
+      padding: 5px 5px 10px 5px; }
+      .seosashopreviews.left .reviews .reviews-list .review > .text .short-text,
+      .seosashopreviews.left .reviews .reviews-list .review > .text .full-text {
+        display: inline-block;
+        text-align: left;
+        vertical-align: top; }
+      .seosashopreviews.left .reviews .reviews-list .review > .text .short-text + .full-text {
+        display: none; }
+  .seosashopreviews.left form {
+    background: #fff;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    padding: 0 10px;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition: top 0.5s ease;
+    -moz-transition: top 0.5s ease;
+    -ms-transition: top 0.5s ease;
+    -o-transition: top 0.5s ease;
+    transition: top 0.5s ease; }
+    .seosashopreviews.left form div.uploader span.filename {
+      width: 154px; }
+  .seosashopreviews.left.form-visible form {
+    top: 0;
+    display: block;
+    z-index: 10000; }
+  .seosashopreviews.left.form-visible .controls {
+    display: none; }
+  .seosashopreviews.standalone .reviews:after {
+    content: '';
+    float: none;
+    clear: both; }
+  .seosashopreviews.standalone .reviews .reviews-list {
+    border-bottom: none;
+    margin-bottom: 5px; }
+    .seosashopreviews.standalone .reviews .reviews-list .review {
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ccc; }
+      .seosashopreviews.standalone .reviews .reviews-list .review:last-child {
+        margin-bottom: 0;
+        border-bottom: none; }
+      .seosashopreviews.standalone .reviews .reviews-list .review a {
+        max-height: 100%;
+        display: inline-block;
+        vertical-align: top;
+        margin-bottom: 8px; }
+        .seosashopreviews.standalone .reviews .reviews-list .review a img {
+          max-width: 100%; }
+      .seosashopreviews.standalone .reviews .reviews-list .review .text {
+        font-size: 14px;
+        display: inline-block;
+        max-width: 65%;
+        padding: 0;
+        margin-bottom: 5px; }
+        .seosashopreviews.standalone .reviews .reviews-list .review .text .short-text,
+        .seosashopreviews.standalone .reviews .reviews-list .review .text .full-text {
+          display: inline-block;
+          text-align: left;
+          vertical-align: top; }
+        .seosashopreviews.standalone .reviews .reviews-list .review .text .short-text + .full-text {
+          display: none; }
+      .seosashopreviews.standalone .reviews .reviews-list .review label.text {
+        font-weight: bold; }
+
+.star_content {
+  float: left; }
+
+.star_content + .text {
+  padding: 0 10px !important; }
+
+.seosashopreviews_rating {
+  height: 1em;
+  margin-top: 1em; }
+
+.seosashopreviews .rating_label {
+  display: block;
+  float: left;
+  margin-right: 5px;
+  margin-top: -3px; }
+
+.seosashopreviews .star_sr {
+  display: block;
+  width: 16px;
+  height: 16px;
+  float: left;
+  background: url(../img/star.jpg) 0% 0% no-repeat;
+  cursor: pointer; }
+
+.seosashopreviews .star_sr_on {
+  display: block;
+  width: 16px;
+  height: 16px;
+  float: left;
+  background: url(../img/star.jpg) 0% 100% no-repeat; }
+
+.seosashopreviews .delete_star {
+  background: url(../img/delete.png) no-repeat 0 0 !important;
+  display: block;
+  width: 16px;
+  height: 16px;
+  float: left; }
+
+/* uploader */
+div.uploader input {
+  opacity: 1;
+  position: inherit; }
+
+div.uploader span.filename {
+  display: none; }
+
+div.uploader span.action {
+  display: none; }

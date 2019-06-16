@@ -1,0 +1,741 @@
+17:17:52 09-06-2017: array (
+  'xml_request' => '<?xml version="1.0" encoding="UTF-8"?>
+<StatusReport Date="2016-06-30" Account="" Secure="961ff9996152fe0e71d12efecbed061c" ShowHistory="1" ShowReturnOrder="1" ShowReturnOrderHistory="1" DateFirst="2016-06-30" DateLast="2017-06-09">
+  <Order Number="27" Date="2016-06-30"/>
+</StatusReport>
+',
+)
+17:17:53 09-06-2017: array (
+  'StatusReport' => 
+  array (
+    '@value' => '',
+    '@attributes' => 
+    array (
+      'Date' => '2016-06-30',
+      'ErrorCode' => 'ERR_AUTH',
+      'Msg' => 'Интернет-магазин не идентифицирован: Account=, Secure=961ff9996152fe0e71d12efecbed061c',
+    ),
+  ),
+)
+13:49:15 04-06-2019: array (
+  'xml_request' => '<?xml version="1.0" encoding="UTF-8"?>
+<StatusReport Date="2019-06-04" Account="" Secure="fe95a6782a6fa20e0f4b30ef08276011" ShowHistory="1" ShowReturnOrder="1" ShowReturnOrderHistory="1" DateFirst="2019-06-04" DateLast="2019-06-04">
+  <Order Number="6" Date="2019-06-04"/>
+</StatusReport>
+',
+)
+13:49:16 04-06-2019: array (
+  'StatusReport' => 
+  array (
+    '@value' => '',
+    '@attributes' => 
+    array (
+      'Date' => '2019-06-04',
+      'ErrorCode' => 'ERR_AUTH',
+      'Msg' => 'Интернет-магазин не идентифицирован: Account=, Secure=fe95a6782a6fa20e0f4b30ef08276011',
+    ),
+  ),
+)
+13:49:22 04-06-2019: array (
+  'xml_request' => '<?xml version="1.0" encoding="UTF-8"?>
+<StatusReport Date="2019-06-04" Account="" Secure="fe95a6782a6fa20e0f4b30ef08276011" ShowHistory="1" ShowReturnOrder="1" ShowReturnOrderHistory="1" DateFirst="2019-06-04" DateLast="2019-06-04">
+  <Order Number="6" Date="2019-06-04"/>
+</StatusReport>
+',
+)
+13:49:22 04-06-2019: array (
+  'StatusReport' => 
+  array (
+    '@value' => '',
+    '@attributes' => 
+    array (
+      'Date' => '2019-06-04',
+      'ErrorCode' => 'ERR_AUTH',
+      'Msg' => 'Интернет-магазин не идентифицирован: Account=, Secure=fe95a6782a6fa20e0f4b30ef08276011',
+    ),
+  ),
+)
+13:55:36 04-06-2019: array (
+  'xml_request' => '<?xml version="1.0" encoding="UTF-8"?>
+<StatusReport Date="2019-06-04" Account="" Secure="fe95a6782a6fa20e0f4b30ef08276011" ShowHistory="1" ShowReturnOrder="1" ShowReturnOrderHistory="1" DateFirst="2019-06-04" DateLast="2019-06-04">
+  <Order Number="6" Date="2019-06-04"/>
+</StatusReport>
+',
+)
+13:55:36 04-06-2019: array (
+  'StatusReport' => 
+  array (
+    '@value' => '',
+    '@attributes' => 
+    array (
+      'Date' => '2019-06-04',
+      'ErrorCode' => 'ERR_AUTH',
+      'Msg' => 'Интернет-магазин не идентифицирован: Account=, Secure=fe95a6782a6fa20e0f4b30ef08276011',
+    ),
+  ),
+)
+13:55:43 04-06-2019: array (
+  'xml_request' => '<?xml version="1.0" encoding="UTF-8"?>
+<StatusReport Date="2019-06-04" Account="" Secure="fe95a6782a6fa20e0f4b30ef08276011" ShowHistory="1" ShowReturnOrder="1" ShowReturnOrderHistory="1" DateFirst="2019-06-04" DateLast="2019-06-04">
+  <Order Number="6" Date="2019-06-04"/>
+</StatusReport>
+',
+)
+13:55:44 04-06-2019: array (
+  'StatusReport' => 
+  array (
+    '@value' => '',
+    '@attributes' => 
+    array (
+      'Date' => '2019-06-04',
+      'ErrorCode' => 'ERR_AUTH',
+      'Msg' => 'Интернет-магазин не идентифицирован: Account=, Secure=fe95a6782a6fa20e0f4b30ef08276011',
+    ),
+  ),
+)
+14:02:55 04-06-2019: array (
+  'xml_request' => '<?xml version="1.0" encoding="UTF-8"?>
+<StatusReport Date="2019-06-04" Account="" Secure="fe95a6782a6fa20e0f4b30ef08276011" ShowHistory="1" ShowReturnOrder="1" ShowReturnOrderHistory="1" DateFirst="2019-06-04" DateLast="2019-06-04">
+  <Order Number="6" Date="2019-06-04"/>
+</StatusReport>
+',
+)
+14:02:56 04-06-2019: array (
+  'StatusReport' => 
+  array (
+    '@value' => '',
+    '@attributes' => 
+    array (
+      'Date' => '2019-06-04',
+      'ErrorCode' => 'ERR_AUTH',
+      'Msg' => 'Интернет-магазин не идентифицирован: Account=, Secure=fe95a6782a6fa20e0f4b30ef08276011',
+    ),
+  ),
+)
+14:03:02 04-06-2019: array (
+  'xml_request' => '<?xml version="1.0" encoding="UTF-8"?>
+<StatusReport Date="2019-06-04" Account="" Secure="fe95a6782a6fa20e0f4b30ef08276011" ShowHistory="1" ShowReturnOrder="1" ShowReturnOrderHistory="1" DateFirst="2019-06-04" DateLast="2019-06-04">
+  <Order Number="6" Date="2019-06-04"/>
+</StatusReport>
+',
+)
+14:03:03 04-06-2019: array (
+  'StatusReport' => 
+  array (
+    '@value' => '',
+    '@attributes' => 
+    array (
+      'Date' => '2019-06-04',
+      'ErrorCode' => 'ERR_AUTH',
+      'Msg' => 'Интернет-магазин не идентифицирован: Account=, Secure=fe95a6782a6fa20e0f4b30ef08276011',
+    ),
+  ),
+)
+14:03:07 04-06-2019: array (
+  'xml_request' => '<?xml version="1.0" encoding="UTF-8"?>
+<StatusReport Date="2019-06-04" Account="" Secure="fe95a6782a6fa20e0f4b30ef08276011" ShowHistory="1" ShowReturnOrder="1" ShowReturnOrderHistory="1" DateFirst="2019-06-04" DateLast="2019-06-04">
+  <Order Number="6" Date="2019-06-04"/>
+</StatusReport>
+',
+)
+14:03:08 04-06-2019: array (
+  'StatusReport' => 
+  array (
+    '@value' => '',
+    '@attributes' => 
+    array (
+      'Date' => '2019-06-04',
+      'ErrorCode' => 'ERR_AUTH',
+      'Msg' => 'Интернет-магазин не идентифицирован: Account=, Secure=fe95a6782a6fa20e0f4b30ef08276011',
+    ),
+  ),
+)
+14:03:14 04-06-2019: array (
+  'xml_request' => '<?xml version="1.0" encoding="UTF-8"?>
+<StatusReport Date="2019-06-04" Account="" Secure="fe95a6782a6fa20e0f4b30ef08276011" ShowHistory="1" ShowReturnOrder="1" ShowReturnOrderHistory="1" DateFirst="2019-06-04" DateLast="2019-06-04">
+  <Order Number="6" Date="2019-06-04"/>
+</StatusReport>
+',
+)
+14:03:14 04-06-2019: array (
+  'StatusReport' => 
+  array (
+    '@value' => '',
+    '@attributes' => 
+    array (
+      'Date' => '2019-06-04',
+      'ErrorCode' => 'ERR_AUTH',
+      'Msg' => 'Интернет-магазин не идентифицирован: Account=, Secure=fe95a6782a6fa20e0f4b30ef08276011',
+    ),
+  ),
+)
+14:11:20 04-06-2019: array (
+  'xml_request' => '<?xml version="1.0" encoding="UTF-8"?>
+<StatusReport Date="2019-06-04" Account="" Secure="fe95a6782a6fa20e0f4b30ef08276011" ShowHistory="1" ShowReturnOrder="1" ShowReturnOrderHistory="1" DateFirst="2019-06-04" DateLast="2019-06-04">
+  <Order Number="6" Date="2019-06-04"/>
+</StatusReport>
+',
+)
+14:11:20 04-06-2019: array (
+  'StatusReport' => 
+  array (
+    '@value' => '',
+    '@attributes' => 
+    array (
+      'Date' => '2019-06-04',
+      'ErrorCode' => 'ERR_AUTH',
+      'Msg' => 'Интернет-магазин не идентифицирован: Account=, Secure=fe95a6782a6fa20e0f4b30ef08276011',
+    ),
+  ),
+)
+14:11:27 04-06-2019: array (
+  'xml_request' => '<?xml version="1.0" encoding="UTF-8"?>
+<StatusReport Date="2019-06-04" Account="" Secure="fe95a6782a6fa20e0f4b30ef08276011" ShowHistory="1" ShowReturnOrder="1" ShowReturnOrderHistory="1" DateFirst="2019-06-04" DateLast="2019-06-04">
+  <Order Number="6" Date="2019-06-04"/>
+</StatusReport>
+',
+)
+14:11:27 04-06-2019: array (
+  'StatusReport' => 
+  array (
+    '@value' => '',
+    '@attributes' => 
+    array (
+      'Date' => '2019-06-04',
+      'ErrorCode' => 'ERR_AUTH',
+      'Msg' => 'Интернет-магазин не идентифицирован: Account=, Secure=fe95a6782a6fa20e0f4b30ef08276011',
+    ),
+  ),
+)
+14:56:21 04-06-2019: array (
+  'xml_request' => '<?xml version="1.0" encoding="UTF-8"?>
+<StatusReport Date="2019-06-04" Account="" Secure="fe95a6782a6fa20e0f4b30ef08276011" ShowHistory="1" ShowReturnOrder="1" ShowReturnOrderHistory="1" DateFirst="2019-06-04" DateLast="2019-06-04">
+  <Order Number="6" Date="2019-06-04"/>
+</StatusReport>
+',
+)
+14:56:22 04-06-2019: array (
+  'StatusReport' => 
+  array (
+    '@value' => '',
+    '@attributes' => 
+    array (
+      'Date' => '2019-06-04',
+      'ErrorCode' => 'ERR_AUTH',
+      'Msg' => 'Интернет-магазин не идентифицирован: Account=, Secure=fe95a6782a6fa20e0f4b30ef08276011',
+    ),
+  ),
+)
+14:56:28 04-06-2019: array (
+  'xml_request' => '<?xml version="1.0" encoding="UTF-8"?>
+<StatusReport Date="2019-06-04" Account="" Secure="fe95a6782a6fa20e0f4b30ef08276011" ShowHistory="1" ShowReturnOrder="1" ShowReturnOrderHistory="1" DateFirst="2019-06-04" DateLast="2019-06-04">
+  <Order Number="6" Date="2019-06-04"/>
+</StatusReport>
+',
+)
+14:56:28 04-06-2019: array (
+  'StatusReport' => 
+  array (
+    '@value' => '',
+    '@attributes' => 
+    array (
+      'Date' => '2019-06-04',
+      'ErrorCode' => 'ERR_AUTH',
+      'Msg' => 'Интернет-магазин не идентифицирован: Account=, Secure=fe95a6782a6fa20e0f4b30ef08276011',
+    ),
+  ),
+)
+14:56:47 04-06-2019: array (
+  'xml_request' => '<?xml version="1.0" encoding="UTF-8"?>
+<StatusReport Date="2019-06-04" Account="" Secure="fe95a6782a6fa20e0f4b30ef08276011" ShowHistory="1" ShowReturnOrder="1" ShowReturnOrderHistory="1" DateFirst="2019-06-04" DateLast="2019-06-04">
+  <Order Number="6" Date="2019-06-04"/>
+</StatusReport>
+',
+)
+14:56:48 04-06-2019: array (
+  'StatusReport' => 
+  array (
+    '@value' => '',
+    '@attributes' => 
+    array (
+      'Date' => '2019-06-04',
+      'ErrorCode' => 'ERR_AUTH',
+      'Msg' => 'Интернет-магазин не идентифицирован: Account=, Secure=fe95a6782a6fa20e0f4b30ef08276011',
+    ),
+  ),
+)
+14:56:54 04-06-2019: array (
+  'xml_request' => '<?xml version="1.0" encoding="UTF-8"?>
+<StatusReport Date="2019-06-04" Account="" Secure="fe95a6782a6fa20e0f4b30ef08276011" ShowHistory="1" ShowReturnOrder="1" ShowReturnOrderHistory="1" DateFirst="2019-06-04" DateLast="2019-06-04">
+  <Order Number="6" Date="2019-06-04"/>
+</StatusReport>
+',
+)
+14:56:54 04-06-2019: array (
+  'StatusReport' => 
+  array (
+    '@value' => '',
+    '@attributes' => 
+    array (
+      'Date' => '2019-06-04',
+      'ErrorCode' => 'ERR_AUTH',
+      'Msg' => 'Интернет-магазин не идентифицирован: Account=, Secure=fe95a6782a6fa20e0f4b30ef08276011',
+    ),
+  ),
+)
+16:38:33 04-06-2019: array (
+  'xml_request' => '<?xml version="1.0" encoding="UTF-8"?>
+<StatusReport Date="2019-06-04" Account="" Secure="fe95a6782a6fa20e0f4b30ef08276011" ShowHistory="1" ShowReturnOrder="1" ShowReturnOrderHistory="1" DateFirst="2019-06-04" DateLast="2019-06-04">
+  <Order Number="6" Date="2019-06-04"/>
+</StatusReport>
+',
+)
+16:38:33 04-06-2019: array (
+  'StatusReport' => 
+  array (
+    '@value' => '',
+    '@attributes' => 
+    array (
+      'Date' => '2019-06-04',
+      'ErrorCode' => 'ERR_AUTH',
+      'Msg' => 'Интернет-магазин не идентифицирован: Account=, Secure=fe95a6782a6fa20e0f4b30ef08276011',
+    ),
+  ),
+)
+16:38:36 04-06-2019: array (
+  'xml_request' => '<?xml version="1.0" encoding="UTF-8"?>
+<StatusReport Date="2019-06-04" Account="" Secure="fe95a6782a6fa20e0f4b30ef08276011" ShowHistory="1" ShowReturnOrder="1" ShowReturnOrderHistory="1" DateFirst="2019-06-04" DateLast="2019-06-04">
+  <Order Number="6" Date="2019-06-04"/>
+</StatusReport>
+',
+)
+16:38:36 04-06-2019: array (
+  'StatusReport' => 
+  array (
+    '@value' => '',
+    '@attributes' => 
+    array (
+      'Date' => '2019-06-04',
+      'ErrorCode' => 'ERR_AUTH',
+      'Msg' => 'Интернет-магазин не идентифицирован: Account=, Secure=fe95a6782a6fa20e0f4b30ef08276011',
+    ),
+  ),
+)
+16:38:39 04-06-2019: array (
+  'xml_request' => '<?xml version="1.0" encoding="UTF-8"?>
+<StatusReport Date="2019-06-04" Account="" Secure="fe95a6782a6fa20e0f4b30ef08276011" ShowHistory="1" ShowReturnOrder="1" ShowReturnOrderHistory="1" DateFirst="2019-06-04" DateLast="2019-06-04">
+  <Order Number="6" Date="2019-06-04"/>
+</StatusReport>
+',
+)
+16:38:39 04-06-2019: array (
+  'StatusReport' => 
+  array (
+    '@value' => '',
+    '@attributes' => 
+    array (
+      'Date' => '2019-06-04',
+      'ErrorCode' => 'ERR_AUTH',
+      'Msg' => 'Интернет-магазин не идентифицирован: Account=, Secure=fe95a6782a6fa20e0f4b30ef08276011',
+    ),
+  ),
+)
+16:38:50 04-06-2019: array (
+  'xml_request' => '<?xml version="1.0" encoding="UTF-8"?>
+<StatusReport Date="2019-06-04" Account="" Secure="fe95a6782a6fa20e0f4b30ef08276011" ShowHistory="1" ShowReturnOrder="1" ShowReturnOrderHistory="1" DateFirst="2019-06-04" DateLast="2019-06-04">
+  <Order Number="6" Date="2019-06-04"/>
+</StatusReport>
+',
+)
+16:38:50 04-06-2019: array (
+  'StatusReport' => 
+  array (
+    '@value' => '',
+    '@attributes' => 
+    array (
+      'Date' => '2019-06-04',
+      'ErrorCode' => 'ERR_AUTH',
+      'Msg' => 'Интернет-магазин не идентифицирован: Account=, Secure=fe95a6782a6fa20e0f4b30ef08276011',
+    ),
+  ),
+)
+16:38:55 04-06-2019: array (
+  'xml_request' => '<?xml version="1.0" encoding="UTF-8"?>
+<StatusReport Date="2019-06-04" Account="" Secure="fe95a6782a6fa20e0f4b30ef08276011" ShowHistory="1" ShowReturnOrder="1" ShowReturnOrderHistory="1" DateFirst="2019-06-04" DateLast="2019-06-04">
+  <Order Number="6" Date="2019-06-04"/>
+</StatusReport>
+',
+)
+16:38:56 04-06-2019: array (
+  'StatusReport' => 
+  array (
+    '@value' => '',
+    '@attributes' => 
+    array (
+      'Date' => '2019-06-04',
+      'ErrorCode' => 'ERR_AUTH',
+      'Msg' => 'Интернет-магазин не идентифицирован: Account=, Secure=fe95a6782a6fa20e0f4b30ef08276011',
+    ),
+  ),
+)
+16:39:02 04-06-2019: array (
+  'xml_request' => '<?xml version="1.0" encoding="UTF-8"?>
+<StatusReport Date="2019-06-04" Account="" Secure="fe95a6782a6fa20e0f4b30ef08276011" ShowHistory="1" ShowReturnOrder="1" ShowReturnOrderHistory="1" DateFirst="2019-06-04" DateLast="2019-06-04">
+  <Order Number="6" Date="2019-06-04"/>
+</StatusReport>
+',
+)
+16:39:02 04-06-2019: array (
+  'StatusReport' => 
+  array (
+    '@value' => '',
+    '@attributes' => 
+    array (
+      'Date' => '2019-06-04',
+      'ErrorCode' => 'ERR_AUTH',
+      'Msg' => 'Интернет-магазин не идентифицирован: Account=, Secure=fe95a6782a6fa20e0f4b30ef08276011',
+    ),
+  ),
+)
+17:03:30 04-06-2019: array (
+  'xml_request' => '<?xml version="1.0" encoding="UTF-8"?>
+<StatusReport Date="2019-06-04" Account="" Secure="fe95a6782a6fa20e0f4b30ef08276011" ShowHistory="1" ShowReturnOrder="1" ShowReturnOrderHistory="1" DateFirst="2019-06-04" DateLast="2019-06-04">
+  <Order Number="6" Date="2019-06-04"/>
+</StatusReport>
+',
+)
+17:03:30 04-06-2019: array (
+  'StatusReport' => 
+  array (
+    '@value' => '',
+    '@attributes' => 
+    array (
+      'Date' => '2019-06-04',
+      'ErrorCode' => 'ERR_AUTH',
+      'Msg' => 'Интернет-магазин не идентифицирован: Account=, Secure=fe95a6782a6fa20e0f4b30ef08276011',
+    ),
+  ),
+)
+17:03:37 04-06-2019: array (
+  'xml_request' => '<?xml version="1.0" encoding="UTF-8"?>
+<StatusReport Date="2019-06-04" Account="" Secure="fe95a6782a6fa20e0f4b30ef08276011" ShowHistory="1" ShowReturnOrder="1" ShowReturnOrderHistory="1" DateFirst="2019-06-04" DateLast="2019-06-04">
+  <Order Number="6" Date="2019-06-04"/>
+</StatusReport>
+',
+)
+17:03:37 04-06-2019: array (
+  'StatusReport' => 
+  array (
+    '@value' => '',
+    '@attributes' => 
+    array (
+      'Date' => '2019-06-04',
+      'ErrorCode' => 'ERR_AUTH',
+      'Msg' => 'Интернет-магазин не идентифицирован: Account=, Secure=fe95a6782a6fa20e0f4b30ef08276011',
+    ),
+  ),
+)
+17:04:01 04-06-2019: array (
+  'xml_request' => '<?xml version="1.0" encoding="UTF-8"?>
+<StatusReport Date="2019-06-04" Account="" Secure="fe95a6782a6fa20e0f4b30ef08276011" ShowHistory="1" ShowReturnOrder="1" ShowReturnOrderHistory="1" DateFirst="2019-06-04" DateLast="2019-06-04">
+  <Order Number="6" Date="2019-06-04"/>
+</StatusReport>
+',
+)
+17:04:02 04-06-2019: array (
+  'StatusReport' => 
+  array (
+    '@value' => '',
+    '@attributes' => 
+    array (
+      'Date' => '2019-06-04',
+      'ErrorCode' => 'ERR_AUTH',
+      'Msg' => 'Интернет-магазин не идентифицирован: Account=, Secure=fe95a6782a6fa20e0f4b30ef08276011',
+    ),
+  ),
+)
+17:04:08 04-06-2019: array (
+  'xml_request' => '<?xml version="1.0" encoding="UTF-8"?>
+<StatusReport Date="2019-06-04" Account="" Secure="fe95a6782a6fa20e0f4b30ef08276011" ShowHistory="1" ShowReturnOrder="1" ShowReturnOrderHistory="1" DateFirst="2019-06-04" DateLast="2019-06-04">
+  <Order Number="6" Date="2019-06-04"/>
+</StatusReport>
+',
+)
+17:04:08 04-06-2019: array (
+  'StatusReport' => 
+  array (
+    '@value' => '',
+    '@attributes' => 
+    array (
+      'Date' => '2019-06-04',
+      'ErrorCode' => 'ERR_AUTH',
+      'Msg' => 'Интернет-магазин не идентифицирован: Account=, Secure=fe95a6782a6fa20e0f4b30ef08276011',
+    ),
+  ),
+)
+17:04:21 04-06-2019: array (
+  'xml_request' => '<?xml version="1.0" encoding="UTF-8"?>
+<StatusReport Date="2019-06-04" Account="" Secure="fe95a6782a6fa20e0f4b30ef08276011" ShowHistory="1" ShowReturnOrder="1" ShowReturnOrderHistory="1" DateFirst="2019-06-04" DateLast="2019-06-04">
+  <Order Number="6" Date="2019-06-04"/>
+</StatusReport>
+',
+)
+17:04:21 04-06-2019: array (
+  'StatusReport' => 
+  array (
+    '@value' => '',
+    '@attributes' => 
+    array (
+      'Date' => '2019-06-04',
+      'ErrorCode' => 'ERR_AUTH',
+      'Msg' => 'Интернет-магазин не идентифицирован: Account=, Secure=fe95a6782a6fa20e0f4b30ef08276011',
+    ),
+  ),
+)
+17:04:28 04-06-2019: array (
+  'xml_request' => '<?xml version="1.0" encoding="UTF-8"?>
+<StatusReport Date="2019-06-04" Account="" Secure="fe95a6782a6fa20e0f4b30ef08276011" ShowHistory="1" ShowReturnOrder="1" ShowReturnOrderHistory="1" DateFirst="2019-06-04" DateLast="2019-06-04">
+  <Order Number="6" Date="2019-06-04"/>
+</StatusReport>
+',
+)
+17:04:28 04-06-2019: array (
+  'StatusReport' => 
+  array (
+    '@value' => '',
+    '@attributes' => 
+    array (
+      'Date' => '2019-06-04',
+      'ErrorCode' => 'ERR_AUTH',
+      'Msg' => 'Интернет-магазин не идентифицирован: Account=, Secure=fe95a6782a6fa20e0f4b30ef08276011',
+    ),
+  ),
+)
+17:04:39 04-06-2019: array (
+  'xml_request' => '<?xml version="1.0" encoding="UTF-8"?>
+<StatusReport Date="2019-06-04" Account="" Secure="fe95a6782a6fa20e0f4b30ef08276011" ShowHistory="1" ShowReturnOrder="1" ShowReturnOrderHistory="1" DateFirst="2019-06-04" DateLast="2019-06-04">
+  <Order Number="6" Date="2019-06-04"/>
+</StatusReport>
+',
+)
+17:04:39 04-06-2019: array (
+  'StatusReport' => 
+  array (
+    '@value' => '',
+    '@attributes' => 
+    array (
+      'Date' => '2019-06-04',
+      'ErrorCode' => 'ERR_AUTH',
+      'Msg' => 'Интернет-магазин не идентифицирован: Account=, Secure=fe95a6782a6fa20e0f4b30ef08276011',
+    ),
+  ),
+)
+17:04:45 04-06-2019: array (
+  'xml_request' => '<?xml version="1.0" encoding="UTF-8"?>
+<StatusReport Date="2019-06-04" Account="" Secure="fe95a6782a6fa20e0f4b30ef08276011" ShowHistory="1" ShowReturnOrder="1" ShowReturnOrderHistory="1" DateFirst="2019-06-04" DateLast="2019-06-04">
+  <Order Number="6" Date="2019-06-04"/>
+</StatusReport>
+',
+)
+17:04:45 04-06-2019: array (
+  'StatusReport' => 
+  array (
+    '@value' => '',
+    '@attributes' => 
+    array (
+      'Date' => '2019-06-04',
+      'ErrorCode' => 'ERR_AUTH',
+      'Msg' => 'Интернет-магазин не идентифицирован: Account=, Secure=fe95a6782a6fa20e0f4b30ef08276011',
+    ),
+  ),
+)
+17:04:51 04-06-2019: array (
+  'xml_request' => '<?xml version="1.0" encoding="UTF-8"?>
+<StatusReport Date="2019-06-04" Account="" Secure="fe95a6782a6fa20e0f4b30ef08276011" ShowHistory="1" ShowReturnOrder="1" ShowReturnOrderHistory="1" DateFirst="2019-06-04" DateLast="2019-06-04">
+  <Order Number="6" Date="2019-06-04"/>
+</StatusReport>
+',
+)
+17:04:52 04-06-2019: array (
+  'StatusReport' => 
+  array (
+    '@value' => '',
+    '@attributes' => 
+    array (
+      'Date' => '2019-06-04',
+      'ErrorCode' => 'ERR_AUTH',
+      'Msg' => 'Интернет-магазин не идентифицирован: Account=, Secure=fe95a6782a6fa20e0f4b30ef08276011',
+    ),
+  ),
+)
+17:04:58 04-06-2019: array (
+  'xml_request' => '<?xml version="1.0" encoding="UTF-8"?>
+<StatusReport Date="2019-06-04" Account="" Secure="fe95a6782a6fa20e0f4b30ef08276011" ShowHistory="1" ShowReturnOrder="1" ShowReturnOrderHistory="1" DateFirst="2019-06-04" DateLast="2019-06-04">
+  <Order Number="6" Date="2019-06-04"/>
+</StatusReport>
+',
+)
+17:04:58 04-06-2019: array (
+  'StatusReport' => 
+  array (
+    '@value' => '',
+    '@attributes' => 
+    array (
+      'Date' => '2019-06-04',
+      'ErrorCode' => 'ERR_AUTH',
+      'Msg' => 'Интернет-магазин не идентифицирован: Account=, Secure=fe95a6782a6fa20e0f4b30ef08276011',
+    ),
+  ),
+)
+17:04:59 04-06-2019: array (
+  'xml_request' => '<?xml version="1.0" encoding="UTF-8"?>
+<StatusReport Date="2019-06-04" Account="" Secure="fe95a6782a6fa20e0f4b30ef08276011" ShowHistory="1" ShowReturnOrder="1" ShowReturnOrderHistory="1" DateFirst="2019-06-04" DateLast="2019-06-04">
+  <Order Number="6" Date="2019-06-04"/>
+</StatusReport>
+',
+)
+17:05:00 04-06-2019: array (
+  'StatusReport' => 
+  array (
+    '@value' => '',
+    '@attributes' => 
+    array (
+      'Date' => '2019-06-04',
+      'ErrorCode' => 'ERR_AUTH',
+      'Msg' => 'Интернет-магазин не идентифицирован: Account=, Secure=fe95a6782a6fa20e0f4b30ef08276011',
+    ),
+  ),
+)
+17:05:06 04-06-2019: array (
+  'xml_request' => '<?xml version="1.0" encoding="UTF-8"?>
+<StatusReport Date="2019-06-04" Account="" Secure="fe95a6782a6fa20e0f4b30ef08276011" ShowHistory="1" ShowReturnOrder="1" ShowReturnOrderHistory="1" DateFirst="2019-06-04" DateLast="2019-06-04">
+  <Order Number="6" Date="2019-06-04"/>
+</StatusReport>
+',
+)
+17:05:06 04-06-2019: array (
+  'StatusReport' => 
+  array (
+    '@value' => '',
+    '@attributes' => 
+    array (
+      'Date' => '2019-06-04',
+      'ErrorCode' => 'ERR_AUTH',
+      'Msg' => 'Интернет-магазин не идентифицирован: Account=, Secure=fe95a6782a6fa20e0f4b30ef08276011',
+    ),
+  ),
+)
+17:05:53 04-06-2019: array (
+  'xml_request' => '<?xml version="1.0" encoding="UTF-8"?>
+<StatusReport Date="2019-06-04" Account="" Secure="fe95a6782a6fa20e0f4b30ef08276011" ShowHistory="1" ShowReturnOrder="1" ShowReturnOrderHistory="1" DateFirst="2019-06-04" DateLast="2019-06-04">
+  <Order Number="6" Date="2019-06-04"/>
+</StatusReport>
+',
+)
+17:05:53 04-06-2019: array (
+  'StatusReport' => 
+  array (
+    '@value' => '',
+    '@attributes' => 
+    array (
+      'Date' => '2019-06-04',
+      'ErrorCode' => 'ERR_AUTH',
+      'Msg' => 'Интернет-магазин не идентифицирован: Account=, Secure=fe95a6782a6fa20e0f4b30ef08276011',
+    ),
+  ),
+)
+17:05:59 04-06-2019: array (
+  'xml_request' => '<?xml version="1.0" encoding="UTF-8"?>
+<StatusReport Date="2019-06-04" Account="" Secure="fe95a6782a6fa20e0f4b30ef08276011" ShowHistory="1" ShowReturnOrder="1" ShowReturnOrderHistory="1" DateFirst="2019-06-04" DateLast="2019-06-04">
+  <Order Number="6" Date="2019-06-04"/>
+</StatusReport>
+',
+)
+17:06:00 04-06-2019: array (
+  'StatusReport' => 
+  array (
+    '@value' => '',
+    '@attributes' => 
+    array (
+      'Date' => '2019-06-04',
+      'ErrorCode' => 'ERR_AUTH',
+      'Msg' => 'Интернет-магазин не идентифицирован: Account=, Secure=fe95a6782a6fa20e0f4b30ef08276011',
+    ),
+  ),
+)
+17:06:07 04-06-2019: array (
+  'xml_request' => '<?xml version="1.0" encoding="UTF-8"?>
+<StatusReport Date="2019-06-04" Account="" Secure="fe95a6782a6fa20e0f4b30ef08276011" ShowHistory="1" ShowReturnOrder="1" ShowReturnOrderHistory="1" DateFirst="2019-06-04" DateLast="2019-06-04">
+  <Order Number="6" Date="2019-06-04"/>
+</StatusReport>
+',
+)
+17:06:07 04-06-2019: array (
+  'StatusReport' => 
+  array (
+    '@value' => '',
+    '@attributes' => 
+    array (
+      'Date' => '2019-06-04',
+      'ErrorCode' => 'ERR_AUTH',
+      'Msg' => 'Интернет-магазин не идентифицирован: Account=, Secure=fe95a6782a6fa20e0f4b30ef08276011',
+    ),
+  ),
+)
+17:06:14 04-06-2019: array (
+  'xml_request' => '<?xml version="1.0" encoding="UTF-8"?>
+<StatusReport Date="2019-06-04" Account="" Secure="fe95a6782a6fa20e0f4b30ef08276011" ShowHistory="1" ShowReturnOrder="1" ShowReturnOrderHistory="1" DateFirst="2019-06-04" DateLast="2019-06-04">
+  <Order Number="6" Date="2019-06-04"/>
+</StatusReport>
+',
+)
+17:06:15 04-06-2019: array (
+  'StatusReport' => 
+  array (
+    '@value' => '',
+    '@attributes' => 
+    array (
+      'Date' => '2019-06-04',
+      'ErrorCode' => 'ERR_AUTH',
+      'Msg' => 'Интернет-магазин не идентифицирован: Account=, Secure=fe95a6782a6fa20e0f4b30ef08276011',
+    ),
+  ),
+)
+17:11:12 04-06-2019: array (
+  'xml_request' => '<?xml version="1.0" encoding="UTF-8"?>
+<StatusReport Date="2019-06-04" Account="" Secure="fe95a6782a6fa20e0f4b30ef08276011" ShowHistory="1" ShowReturnOrder="1" ShowReturnOrderHistory="1" DateFirst="2019-06-04" DateLast="2019-06-04">
+  <Order Number="6" Date="2019-06-04"/>
+</StatusReport>
+',
+)
+17:11:13 04-06-2019: array (
+  'StatusReport' => 
+  array (
+    '@value' => '',
+    '@attributes' => 
+    array (
+      'Date' => '2019-06-04',
+      'ErrorCode' => 'ERR_AUTH',
+      'Msg' => 'Интернет-магазин не идентифицирован: Account=, Secure=fe95a6782a6fa20e0f4b30ef08276011',
+    ),
+  ),
+)
+17:11:19 04-06-2019: array (
+  'xml_request' => '<?xml version="1.0" encoding="UTF-8"?>
+<StatusReport Date="2019-06-04" Account="" Secure="fe95a6782a6fa20e0f4b30ef08276011" ShowHistory="1" ShowReturnOrder="1" ShowReturnOrderHistory="1" DateFirst="2019-06-04" DateLast="2019-06-04">
+  <Order Number="6" Date="2019-06-04"/>
+</StatusReport>
+',
+)
+17:11:19 04-06-2019: array (
+  'StatusReport' => 
+  array (
+    '@value' => '',
+    '@attributes' => 
+    array (
+      'Date' => '2019-06-04',
+      'ErrorCode' => 'ERR_AUTH',
+      'Msg' => 'Интернет-магазин не идентифицирован: Account=, Secure=fe95a6782a6fa20e0f4b30ef08276011',
+    ),
+  ),
+)

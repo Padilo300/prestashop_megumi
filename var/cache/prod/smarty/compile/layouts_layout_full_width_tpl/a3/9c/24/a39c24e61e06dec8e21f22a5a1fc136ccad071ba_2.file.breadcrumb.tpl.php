@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-28 18:58:28
+/* Smarty version 3.1.33, created on 2019-06-17 06:57:22
   from '/home/padilo00/padilo.pro/presta/themes/classic/templates/_partials/breadcrumb.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ced5aa477e090_72437705',
+  'unifunc' => 'content_5d070fa2d756e5_03078182',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a39c24e61e06dec8e21f22a5a1fc136ccad071ba' => 
     array (
       0 => '/home/padilo00/padilo.pro/presta/themes/classic/templates/_partials/breadcrumb.tpl',
-      1 => 1558969069,
+      1 => 1559093177,
       2 => 'file',
     ),
   ),
@@ -20,65 +20,70 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ced5aa477e090_72437705 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d070fa2d756e5_03078182 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
-<nav data-depth="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['breadcrumb']->value['count'], ENT_QUOTES, 'UTF-8');?>
-" class="breadcrumb hidden-sm-down">
-  <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+
+ <section class="mg-crumbs" data-depth="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['breadcrumb']->value['count'], ENT_QUOTES, 'UTF-8');?>
+">
+  <div class="container"  itemscope itemtype="http://schema.org/BreadcrumbList">
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2549059315ced5aa47727f5_67935357', 'breadcrumb');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_20437088555d070fa2d6f140_28340281', 'breadcrumb');
 ?>
 
-  </ol>
-</nav>
+  </div>
+</section>
+
 <?php }
 /* {block 'breadcrumb_item'} */
-class Block_10034517845ced5aa4776008_54792832 extends Smarty_Internal_Block
+class Block_14941844285d070fa2d71394_92133684 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
-          <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-            <a itemprop="item" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['path']->value['url'], ENT_QUOTES, 'UTF-8');?>
-">
-              <span itemprop="name"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['path']->value['title'], ENT_QUOTES, 'UTF-8');?>
+
+        <?php $_smarty_tpl->_assignInScope('val', $_smarty_tpl->tpl_vars['val']->value+1);?>
+
+        <?php if (count($_smarty_tpl->tpl_vars['breadcrumb']->value['links']) == $_smarty_tpl->tpl_vars['val']->value) {?>
+            <span><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['path']->value['title'], ENT_QUOTES, 'UTF-8');?>
 </span>
-            </a>
-            <meta itemprop="position" content="<?php echo htmlspecialchars((isset($_smarty_tpl->tpl_vars['__smarty_foreach_breadcrumb']->value['iteration']) ? $_smarty_tpl->tpl_vars['__smarty_foreach_breadcrumb']->value['iteration'] : null), ENT_QUOTES, 'UTF-8');?>
-">
-          </li>
+        <?php } else { ?>
+          <a itemprop="item" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['path']->value['url'], ENT_QUOTES, 'UTF-8');?>
+"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['path']->value['title'], ENT_QUOTES, 'UTF-8');?>
+</a>
+        <?php }?>
+        
         <?php
 }
 }
 /* {/block 'breadcrumb_item'} */
 /* {block 'breadcrumb'} */
-class Block_2549059315ced5aa47727f5_67935357 extends Smarty_Internal_Block
+class Block_20437088555d070fa2d6f140_28340281 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'breadcrumb' => 
   array (
-    0 => 'Block_2549059315ced5aa47727f5_67935357',
+    0 => 'Block_20437088555d070fa2d6f140_28340281',
   ),
   'breadcrumb_item' => 
   array (
-    0 => 'Block_10034517845ced5aa4776008_54792832',
+    0 => 'Block_14941844285d070fa2d71394_92133684',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
+
+      <?php $_smarty_tpl->_assignInScope('val', 0);?> 
       <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['breadcrumb']->value['links'], 'path', false, NULL, 'breadcrumb', array (
-  'iteration' => true,
 ));
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['path']->value) {
-$_smarty_tpl->tpl_vars['__smarty_foreach_breadcrumb']->value['iteration']++;
 ?>
         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_10034517845ced5aa4776008_54792832', 'breadcrumb_item', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14941844285d070fa2d71394_92133684', 'breadcrumb_item', $this->tplIndex);
 ?>
 
       <?php

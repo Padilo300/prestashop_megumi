@@ -26,7 +26,7 @@
 
 /* Debug only */
 if (!defined('_PS_MODE_DEV_')) {
-define('_PS_MODE_DEV_', 1); // ===================== тут ошибки вывод
+define('_PS_MODE_DEV_', 0); // ===================== тут ошибки вывод
 }
 /* Compatibility warning */
 define('_PS_DISPLAY_COMPATIBILITY_WARNING_', false);

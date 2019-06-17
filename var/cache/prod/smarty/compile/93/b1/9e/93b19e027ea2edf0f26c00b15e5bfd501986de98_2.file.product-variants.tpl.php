@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-28 19:20:33
+/* Smarty version 3.1.33, created on 2019-06-17 06:24:25
   from '/home/padilo00/padilo.pro/presta/themes/classic/templates/catalog/_partials/product-variants.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ced5fd15d4ff6_40292986',
+  'unifunc' => 'content_5d0707e97a7ca0_87238809',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '93b19e027ea2edf0f26c00b15e5bfd501986de98' => 
     array (
       0 => '/home/padilo00/padilo.pro/presta/themes/classic/templates/catalog/_partials/product-variants.tpl',
-      1 => 1558969069,
+      1 => 1560741847,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,35 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ced5fd15d4ff6_40292986 (Smarty_Internal_Template $_smarty_tpl) {
-?><div class="product-variants">
+function content_5d0707e97a7ca0_87238809 (Smarty_Internal_Template $_smarty_tpl) {
+?>
+<style>
+  .pa_listColor{
+    list-style: none;
+  }
+  .pa_listColor-item{
+    border: 1px solid #EAEAEA;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pa_listColor-value{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+  }
+  .input-color{
+    display: none;
+  }
+  input[type=radio]:checked + .pa_listColor-item{
+    box-shadow: 0 0 10px 0 #1bc2a2;
+    transition: all 0.4s;
+  }
+</style>
+
+<div class="product-variants">
   <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['groups']->value, 'group', false, 'id_attribute_group');
 if ($_from !== null) {
@@ -54,26 +81,28 @@ foreach ($_from as $_smarty_tpl->tpl_vars['id_attribute']->value => $_smarty_tpl
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         </select>
+
       <?php } elseif ($_smarty_tpl->tpl_vars['group']->value['group_type'] == 'color') {?>
         <ul id="group_<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['id_attribute_group']->value, ENT_QUOTES, 'UTF-8');?>
-">
+" class="pa_listColor">
           <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['group']->value['attributes'], 'group_attribute', false, 'id_attribute');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['id_attribute']->value => $_smarty_tpl->tpl_vars['group_attribute']->value) {
 ?>
             <li class="float-xs-left input-container">
-              <label>
-                <input class="input-color" type="radio" data-product-attribute="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['id_attribute_group']->value, ENT_QUOTES, 'UTF-8');?>
+              <input id="pa_id<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['id_attribute']->value, ENT_QUOTES, 'UTF-8');?>
+" class="input-color" type="radio" data-product-attribute="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['id_attribute_group']->value, ENT_QUOTES, 'UTF-8');?>
 " name="group[<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['id_attribute_group']->value, ENT_QUOTES, 'UTF-8');?>
 ]" value="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['id_attribute']->value, ENT_QUOTES, 'UTF-8');?>
 "<?php if ($_smarty_tpl->tpl_vars['group_attribute']->value['selected']) {?> checked="checked"<?php }?>>
+              <label class="pa_listColor-item" for="pa_id<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['id_attribute']->value, ENT_QUOTES, 'UTF-8');?>
+">
                 <span
-                  <?php if ($_smarty_tpl->tpl_vars['group_attribute']->value['html_color_code']) {?>class="color" style="background-color: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['group_attribute']->value['html_color_code'], ENT_QUOTES, 'UTF-8');?>
+                  <?php if ($_smarty_tpl->tpl_vars['group_attribute']->value['html_color_code']) {?> class="pa_listColor-value" style="background-color: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['group_attribute']->value['html_color_code'], ENT_QUOTES, 'UTF-8');?>
 " <?php }?>
                   <?php if ($_smarty_tpl->tpl_vars['group_attribute']->value['texture']) {?>class="color texture" style="background-image: url(<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['group_attribute']->value['texture'], ENT_QUOTES, 'UTF-8');?>
-)" <?php }?>
-                ><span class="sr-only"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['group_attribute']->value['name'], ENT_QUOTES, 'UTF-8');?>
+)" <?php }?>><span class="sr-only"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['group_attribute']->value['name'], ENT_QUOTES, 'UTF-8');?>
 </span></span>
               </label>
             </li>

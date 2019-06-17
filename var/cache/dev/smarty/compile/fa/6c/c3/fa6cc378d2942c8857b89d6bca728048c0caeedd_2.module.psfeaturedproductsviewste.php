@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-16 18:22:13
+/* Smarty version 3.1.33, created on 2019-06-17 05:34:03
   from 'module:psfeaturedproductsviewste' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d065ea54c5f86_23089797',
+  'unifunc' => 'content_5d06fc1ba1eda6_55876320',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product_slider_special.tpl' => 1,
   ),
 ),false)) {
-function content_5d065ea54c5f86_23089797 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d06fc1ba1eda6_55876320 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- begin /home/padilo00/padilo.pro/presta/themes/classic/modules/ps_featuredproducts/views/templates/hook/ps_featuredproducts.tpl -->
 <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['products']->value, 'product');

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-16 18:22:12
+/* Smarty version 3.1.33, created on 2019-06-17 05:34:03
   from 'module:psimagesliderviewstemplat' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d065ea4e83594_02264049',
+  'unifunc' => 'content_5d06fc1b59ba05_52694198',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d065ea4e83594_02264049 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d06fc1b59ba05_52694198 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- begin /home/padilo00/padilo.pro/presta/themes/classic/modules/ps_imageslider/views/templates/hook/slider.tpl -->
 
 

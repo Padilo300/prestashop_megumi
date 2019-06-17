@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-16 18:23:33
+/* Smarty version 3.1.33, created on 2019-06-17 05:45:59
   from '/home/padilo00/padilo.pro/presta/admin5225jw75b/themes/default/template/controllers/modules/login_addons.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d065ef5973874_92059777',
+  'unifunc' => 'content_5d06fee7e0e624_99908054',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d065ef5973874_92059777 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d06fee7e0e624_99908054 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="modal-body">
 <?php if ($_smarty_tpl->tpl_vars['add_permission']->value == '1') {?>

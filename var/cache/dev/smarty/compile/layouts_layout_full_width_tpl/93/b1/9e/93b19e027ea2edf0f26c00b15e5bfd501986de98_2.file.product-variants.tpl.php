@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-15 16:25:28
+/* Smarty version 3.1.33, created on 2019-06-17 04:52:48
   from '/home/padilo00/padilo.pro/presta/themes/classic/templates/catalog/_partials/product-variants.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d04f1c8651696_93216218',
+  'unifunc' => 'content_5d06f270162128_34799398',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '93b19e027ea2edf0f26c00b15e5bfd501986de98' => 
     array (
       0 => '/home/padilo00/padilo.pro/presta/themes/classic/templates/catalog/_partials/product-variants.tpl',
-      1 => 1558969069,
+      1 => 1560734942,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,10 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d04f1c8651696_93216218 (Smarty_Internal_Template $_smarty_tpl) {
-?><div class="product-variants">
+function content_5d06f270162128_34799398 (Smarty_Internal_Template $_smarty_tpl) {
+?>
+туту
+<div class="product-variants">
   <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['groups']->value, 'group', false, 'id_attribute_group');
 if ($_from !== null) {
@@ -54,6 +56,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['id_attribute']->value => $_smarty_tpl
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         </select>
+
       <?php } elseif ($_smarty_tpl->tpl_vars['group']->value['group_type'] == 'color') {?>
         <ul id="group_<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['id_attribute_group']->value, ENT_QUOTES, 'UTF-8');?>
 ">

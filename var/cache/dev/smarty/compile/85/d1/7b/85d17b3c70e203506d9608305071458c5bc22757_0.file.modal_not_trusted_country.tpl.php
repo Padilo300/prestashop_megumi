@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-12 14:33:41
+/* Smarty version 3.1.33, created on 2019-06-17 04:15:49
   from '/home/padilo00/padilo.pro/presta/admin5225jw75b/themes/default/template/controllers/modules/modal_not_trusted_country.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d00e3154dd8b8_12107078',
+  'unifunc' => 'content_5d06e9c5082963_07882002',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d00e3154dd8b8_12107078 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d06e9c5082963_07882002 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_assignInScope('module_name', '<strong><span class="module-display-name-placeholder"></span></strong>');?>
 
 <div class="modal-body">

@@ -22,11 +22,25 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
+
+
+{if $product.show_price}
+    {block name='product_discount'}
+        {if $product.has_discount}
+            <div class="my-3 mg-price">
+                {$product.regular_price}
+            </div>
+        {/if}
+    {/block}
+{/if}
+
+{*
 {if $product.show_price}
   <div class="product-prices">
     {block name='product_discount'}
       {if $product.has_discount}
         <div class="product-discount">
+            afsf
           {hook h='displayProductPriceBlock' product=$product type="old_price"}
           <span class="regular-price">{$product.regular_price}</span>
         </div>
@@ -102,7 +116,9 @@
       {elseif $product.additional_delivery_times == 2}
         {if $product.quantity > 0}
           <span class="delivery-information">{$product.delivery_in_stock}</span>
-        {* Out of stock message should not be displayed if customer can't order the product. *}
+        *}
+{* Out of stock message should not be displayed if customer can't order the product. *}{*
+
         {elseif $product.quantity <= 0 && $product.add_to_cart_url}
           <span class="delivery-information">{$product.delivery_out_stock}</span>
         {/if}
@@ -110,3 +126,4 @@
     </div>
   </div>
 {/if}
+*}

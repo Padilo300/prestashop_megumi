@@ -22,6 +22,39 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
+
+<style>
+  .pa_listColor{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .pa_listColor > li{
+    margin: 5px 5px 5px 0;
+  }
+  .pa_listColor-item{
+    border: 1px solid #EAEAEA;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pa_listColor-value{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+  }
+  .input-color{
+    display: none;
+  }
+  input[type=radio]:checked + .pa_listColor-item{
+    box-shadow: 0 0 4px 1px #565656;
+    transition: all 0.4s;
+  }
+</style>
+
 <div class="product-variants">
   {foreach from=$groups key=id_attribute_group item=group}
     {if !empty($group.attributes)}
@@ -37,16 +70,16 @@
             <option value="{$id_attribute}" title="{$group_attribute.name}"{if $group_attribute.selected} selected="selected"{/if}>{$group_attribute.name}</option>
           {/foreach}
         </select>
+
       {elseif $group.group_type == 'color'}
-        <ul id="group_{$id_attribute_group}">
+        <ul id="group_{$id_attribute_group}" class="pa_listColor">
           {foreach from=$group.attributes key=id_attribute item=group_attribute}
             <li class="float-xs-left input-container">
-              <label>
-                <input class="input-color" type="radio" data-product-attribute="{$id_attribute_group}" name="group[{$id_attribute_group}]" value="{$id_attribute}"{if $group_attribute.selected} checked="checked"{/if}>
+              <input id="pa_id{$id_attribute}" class="input-color" type="radio" data-product-attribute="{$id_attribute_group}" name="group[{$id_attribute_group}]" value="{$id_attribute}"{if $group_attribute.selected} checked="checked"{/if}>
+              <label class="pa_listColor-item" for="pa_id{$id_attribute}">
                 <span
-                  {if $group_attribute.html_color_code}class="color" style="background-color: {$group_attribute.html_color_code}" {/if}
-                  {if $group_attribute.texture}class="color texture" style="background-image: url({$group_attribute.texture})" {/if}
-                ><span class="sr-only">{$group_attribute.name}</span></span>
+                  {if $group_attribute.html_color_code} class="pa_listColor-value" style="background-color: {$group_attribute.html_color_code}" {/if}
+                  {if $group_attribute.texture}class="color texture" style="background-image: url({$group_attribute.texture})" {/if}><span class="sr-only">{$group_attribute.name}</span></span>
               </label>
             </li>
           {/foreach}

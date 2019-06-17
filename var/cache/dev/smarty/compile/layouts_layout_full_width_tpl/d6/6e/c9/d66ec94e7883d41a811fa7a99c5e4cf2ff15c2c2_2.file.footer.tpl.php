@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-16 18:24:22
+/* Smarty version 3.1.33, created on 2019-06-17 05:36:03
   from '/home/padilo00/padilo.pro/presta/themes/classic/templates/_partials/footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d065f269f3955_00066527',
+  'unifunc' => 'content_5d06fc93d38347_55468889',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd66ec94e7883d41a811fa7a99c5e4cf2ff15c2c2' => 
     array (
       0 => '/home/padilo00/padilo.pro/presta/themes/classic/templates/_partials/footer.tpl',
-      1 => 1559541555,
+      1 => 1560720553,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d065f269f3955_00066527 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d06fc93d38347_55468889 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -28,27 +28,27 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15289102545d065f269d9145_58519370', 'hook_footer_before');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_20817689625d06fc93d33199_29996435', 'hook_footer_before');
 ?>
 
 
       <?php echo '<script'; ?>
- src="https://presta.padilo.pro/themes/classic/assets/js/popper.min.js"    defer><?php echo '</script'; ?>
+ src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"><?php echo '</script'; ?>
 >
       <?php echo '<script'; ?>
- src="https://presta.padilo.pro/themes/classic/assets/js/bootstrap.min.js" defer><?php echo '</script'; ?>
+ src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"><?php echo '</script'; ?>
 >
-      <?php echo '<script'; ?>
- src="https://presta.padilo.pro/themes/classic/assets/js/slick.min.js"     defer><?php echo '</script'; ?>
+
+    <?php echo '<script'; ?>
+ type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer><?php echo '</script'; ?>
 >
+
+
       <?php echo '<script'; ?>
  src="https://unpkg.com/shufflejs@5"                                       defer><?php echo '</script'; ?>
 >
       <?php echo '<script'; ?>
  src="https://presta.padilo.pro/themes/classic/assets/js/main.js"          defer><?php echo '</script'; ?>
->
-      <?php echo '<script'; ?>
- src="https://presta.padilo.pro/themes/classic/assets/js/theme.js"         defer><?php echo '</script'; ?>
 >
 
 <?php echo '<script'; ?>
@@ -226,12 +226,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15289102545d065f26
 
                                                                                                                                                                   <?php }
 /* {block 'hook_footer_before'} */
-class Block_15289102545d065f269d9145_58519370 extends Smarty_Internal_Block
+class Block_20817689625d06fc93d33199_29996435 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'hook_footer_before' => 
   array (
-    0 => 'Block_15289102545d065f269d9145_58519370',
+    0 => 'Block_20817689625d06fc93d33199_29996435',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

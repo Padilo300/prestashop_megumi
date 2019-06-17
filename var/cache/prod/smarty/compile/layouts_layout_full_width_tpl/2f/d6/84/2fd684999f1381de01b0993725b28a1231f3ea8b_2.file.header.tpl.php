@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-28 18:58:28
+/* Smarty version 3.1.33, created on 2019-06-17 06:57:22
   from '/home/padilo00/padilo.pro/presta/themes/classic/templates/_partials/header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ced5aa4681768_42761398',
+  'unifunc' => 'content_5d070fa2c9cfa0_76791545',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2fd684999f1381de01b0993725b28a1231f3ea8b' => 
     array (
       0 => '/home/padilo00/padilo.pro/presta/themes/classic/templates/_partials/header.tpl',
-      1 => 1558969069,
+      1 => 1559091687,
       2 => 'file',
     ),
   ),
@@ -20,30 +20,30 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ced5aa4681768_42761398 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d070fa2c9cfa0_76791545 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_6660614265ced5aa46696b9_27958068', 'header_banner');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_10700813695d070fa2c966a2_10766183', 'header_banner');
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_7711823515ced5aa466c2d6_91064241', 'header_nav');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_11279945275d070fa2c97bd7_91161823', 'header_nav');
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2515396575ced5aa4671603_89706329', 'header_top');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12019247685d070fa2c98ae4_45634672', 'header_top');
 ?>
 
 <?php }
 /* {block 'header_banner'} */
-class Block_6660614265ced5aa46696b9_27958068 extends Smarty_Internal_Block
+class Block_10700813695d070fa2c966a2_10766183 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'header_banner' => 
   array (
-    0 => 'Block_6660614265ced5aa46696b9_27958068',
+    0 => 'Block_10700813695d070fa2c966a2_10766183',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -58,97 +58,75 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'header_banner'} */
 /* {block 'header_nav'} */
-class Block_7711823515ced5aa466c2d6_91064241 extends Smarty_Internal_Block
+class Block_11279945275d070fa2c97bd7_91161823 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'header_nav' => 
   array (
-    0 => 'Block_7711823515ced5aa466c2d6_91064241',
+    0 => 'Block_11279945275d070fa2c97bd7_91161823',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
-  <nav class="header-nav">
+
+ <div class="mg-header-top">
     <div class="container">
-      <div class="row">
-        <div class="hidden-sm-down">
-          <div class="col-md-5 col-xs-12">
-            <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>'displayNav1'),$_smarty_tpl ) );?>
-
+      <div class="row justify-content-between">
+        <div class="col mg-header-top__phone"><i class="mg-icon icon-phone"></i><a href="tel:8-920-123-45-67"><b>8-920-123-45-67</b> - горячая линия круглосуточно</a></div>
+        <div class="col text-right">
+          <div class="dropdown mg-header-top__delivery">
+            <a class="dropdown-toggle" href="#" role="button" id="cargo-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mg-icon icon-cargo"></i>Доставка и Оплата</a>
+            <div class="dropdown-menu" aria-labelledby="cargo-link">
+              <a class="dropdown-item" href="#">Доставка</a>
+              <a class="dropdown-item" href="#">Оплата</a>
+            </div>
           </div>
-          <div class="col-md-7 right-nav">
-              <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>'displayNav2'),$_smarty_tpl ) );?>
-
-          </div>
-        </div>
-        <div class="hidden-md-up text-sm-center mobile">
-          <div class="float-xs-left" id="menu-icon">
-            <i class="material-icons d-inline">&#xE5D2;</i>
-          </div>
-          <div class="float-xs-right" id="_mobile_cart"></div>
-          <div class="float-xs-right" id="_mobile_user_info"></div>
-          <div class="top-logo" id="_mobile_logo"></div>
-          <div class="clearfix"></div>
-        </div>
-      </div>
-    </div>
-  </nav>
-<?php
-}
-}
-/* {/block 'header_nav'} */
-/* {block 'header_top'} */
-class Block_2515396575ced5aa4671603_89706329 extends Smarty_Internal_Block
-{
-public $subBlocks = array (
-  'header_top' => 
-  array (
-    0 => 'Block_2515396575ced5aa4671603_89706329',
-  ),
-);
-public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
-?>
-
-  <div class="header-top">
-    <div class="container">
-       <div class="row">
-        <div class="col-md-2 hidden-sm-down" id="_desktop_logo">
-            <?php if ($_smarty_tpl->tpl_vars['page']->value['page_name'] == 'index') {?>
-              <h1>
-                <a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['base_url'], ENT_QUOTES, 'UTF-8');?>
-">
-                  <img class="logo img-responsive" src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['shop']->value['logo'], ENT_QUOTES, 'UTF-8');?>
-" alt="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['shop']->value['name'], ENT_QUOTES, 'UTF-8');?>
-">
-                </a>
-              </h1>
-            <?php } else { ?>
-                <a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['base_url'], ENT_QUOTES, 'UTF-8');?>
-">
-                  <img class="logo img-responsive" src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['shop']->value['logo'], ENT_QUOTES, 'UTF-8');?>
-" alt="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['shop']->value['name'], ENT_QUOTES, 'UTF-8');?>
-">
-                </a>
-            <?php }?>
-        </div>
-        <div class="col-md-10 col-sm-12 position-static">
-          <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>'displayTop'),$_smarty_tpl ) );?>
-
-          <div class="clearfix"></div>
-        </div>
-      </div>
-      <div id="mobile_top_menu_wrapper" class="row hidden-md-up" style="display:none;">
-        <div class="js-top-menu mobile" id="_mobile_top_menu"></div>
-        <div class="js-top-menu-bottom">
-          <div id="_mobile_currency_selector"></div>
-          <div id="_mobile_language_selector"></div>
-          <div id="_mobile_contact_link"></div>
+          <a class="mg-header-top__link" href="/ru/myq">Контакты</a>
         </div>
       </div>
     </div>
   </div>
-  <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>'displayNavFullWidth'),$_smarty_tpl ) );?>
+  
+ <?php
+}
+}
+/* {/block 'header_nav'} */
+/* {block 'header_top'} */
+class Block_12019247685d070fa2c98ae4_45634672 extends Smarty_Internal_Block
+{
+public $subBlocks = array (
+  'header_top' => 
+  array (
+    0 => 'Block_12019247685d070fa2c98ae4_45634672',
+  ),
+);
+public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
+?>
+
+
+<div class="container">
+    <div class="mg-header__content">
+
+     <?php if ($_smarty_tpl->tpl_vars['page']->value['page_name'] == 'index') {?>
+
+        <a class="mg-header__logo" href="#"><span class="icon-logo-dark"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span></a>
+      <?php } else { ?>
+        <a class="mg-header__logo" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['base_url'], ENT_QUOTES, 'UTF-8');?>
+"><span class="icon-logo-dark"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span></a>
+      <?php }?>
+
+      <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>'displaySearch'),$_smarty_tpl ) );?>
+
+      <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>'displayNav2'),$_smarty_tpl ) );?>
+
+      <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>'displayNav3'),$_smarty_tpl ) );?>
+
+    </div>
+</div>
+
+<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>'displaySlider'),$_smarty_tpl ) );?>
+
 
 <?php
 }

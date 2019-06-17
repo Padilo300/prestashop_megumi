@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-28 19:23:41
+/* Smarty version 3.1.33, created on 2019-06-17 07:15:10
   from '/home/padilo00/padilo.pro/presta/modules/welcome/views/contents/end.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ced608d4284c7_79884353',
+  'unifunc' => 'content_5d0713ce7881c9_78542880',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ced608d4284c7_79884353 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d0713ce7881c9_78542880 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div id="onboarding-welcome" class="modal-body">
     <div class="col-12">

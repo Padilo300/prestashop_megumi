@@ -39,10 +39,12 @@
                     <div class="mg-main-customers__item-avatar">
                         {if $review->hasImage()}
                             <a href="{$review->getImageLink()|escape:'quotes':'UTF-8'}" class="fancybox">
-                                <img src="{$review->getImageLink($hook_type)|escape:'quotes':'UTF-8'}" alt="" />
+                                <img src="{$review->getImageLink($hook_type)|escape:'quotes':'UTF-8'}" alt="megumi" />
                             </a>
                         {else}
-                            <span class="separator"></span>
+                            <a class="fancybox">
+                                <img src="/img/favicon.ico" alt="megumi" />
+                            </a>
                         {/if}
 
                     </div>

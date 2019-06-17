@@ -47,348 +47,6 @@
 
 {block name='content'}
 
-<section class="mg-product-content my-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="mg-product-content__info d-block d-lg-none">
-                    {block name='page_header_container'}
-                        {block name='page_header'}
-                            <h1>{block name='page_title'}{$product.name}{/block}</h1>
-                        {/block}
-                    {/block}
-                    {block name='product_description_short'}
-                        <div class="my-2">{$product.description_short nofilter}</div>
-                    {/block}
-                    <div class="d-flex align-items-center">
-                        <div class="mg-main-customers__item-rating d-inline-flex ml-0"><i class="active"></i><i class="active"></i><i class="active"></i><i class="active"></i><i></i></div>
-                        <span class="mg-text-grey mr-3">Отзывы (2)</span>
-                        <a class="mg-text-grey" href="#">Добавить отзыв</a>
-                    </div>
-                    <div class="my-3 mg-price">1980<i class="mg-ruble">₽</i></div>
-                </div>
-                <div class="mg-product-content__image"><img src="http://presta.padilo.pro/img/p/2/2-large_default.jpg" alt="" /></div>
-                <div class="mg-product-content__image-thumbs">
-                    <ul>
-                        <li class="selected"><img src="http://presta.padilo.pro/img/p/2/2-large_default.jpg" alt="" /></li>
-                        <li><img src="http://presta.padilo.pro/img/p/2/2-large_default.jpg" alt="" /></li>
-                    </ul>
-                </div>
-                <div class="text-uppercase mg-text-grey my-2 d-none d-lg-block">СОПУТСТВУЮЩИЕ ТОВАРЫ</div>
-                <div class="mg-main-slider mg-main-slider-product mg-mini-product mx-0 d-none d-lg-block">
-                    <div>
-                        <div class="mg-product-cart__wrapper">
-              <span class="mg-product-cart__labels">
-                <i class="mg-product-cart__label mg-product-cart__label--hit">ХИТ</i>
-                <i class="mg-product-cart__label mg-product-cart__label--sale">СКИДКА</i>
-              </span>
-                            <img class="mg-product-cart__image" src="images/uploads/product-image-1.jpg" alt="" />
-                            <span class="mg-product-cart__name">MEDI-PEEL</span>
-                            <p class="mg-product-cart__desc">Ампула с 24 каратным золотом Luxury 24K Gold Ampoule 100 мл</p>
-                            <span class="mg-product-cart__price mg-product-cart__price--sale"><span class="mg-product-cart__sale-price">5890<i class="mg-ruble">₽</i></span>3890<i class="mg-ruble">₽</i></span>
-                            <div class="mg-product-cart__btns">
-                                <a class="mg-btn mg-btn--transparent mg-product-cart__btn--like" href="#"><i class="mg-icon icon-heart"></i></a>
-                                <a class="mg-btn mg-btn--black mg-product-cart__btn--buy" href="#">Купить</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="mg-product-cart__wrapper">
-                            <img class="mg-product-cart__image" src="images/uploads/product-image-2.jpg" alt="" />
-                            <span class="mg-product-cart__name">JM Solution</span>
-                            <p class="mg-product-cart__desc">Honey Luminous Royal Propolis Mask 10p</p>
-                            <span class="mg-product-cart__price">1980<i class="mg-ruble">₽</i></span>
-                            <div class="mg-product-cart__btns">
-                                <a class="mg-btn mg-btn--transparent mg-product-cart__btn--like" href="#"><i class="mg-icon icon-heart"></i></a>
-                                <a class="mg-btn mg-btn--black mg-product-cart__btn--buy" href="#">Купить</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="mg-product-cart__wrapper">
-              <span class="mg-product-cart__labels">
-                <i class="mg-product-cart__label mg-product-cart__label--new">НОВИНКА</i>
-                <i class="mg-product-cart__label mg-product-cart__label--top">ЛИДЕР ПРОДАЖ</i>
-              </span>
-                            <img class="mg-product-cart__image" src="images/uploads/product-image-3.jpg" alt="" />
-                            <span class="mg-product-cart__name">mizon</span>
-                            <p class="mg-product-cart__desc">Средство против прыщей Acence Blemish Out Pink Spot 30мл</p>
-                            <span class="mg-product-cart__price">1980<i class="mg-ruble">₽</i></span>
-                            <div class="mg-product-cart__btns">
-                                <a class="mg-btn mg-btn--transparent mg-product-cart__btn--like" href="#"><i class="mg-icon icon-heart"></i></a>
-                                <a class="mg-btn mg-btn--black mg-product-cart__btn--buy" href="#">Купить</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="mg-product-cart__wrapper">
-              <span class="mg-product-cart__labels">
-                <i class="mg-product-cart__label mg-product-cart__label--popular">ВЫБОР КОСМЕТОЛОГОВ</i>
-                <i class="mg-product-cart__label mg-product-cart__label--promo">НАШ ВЫБОР</i>
-              </span>
-                            <img class="mg-product-cart__image" src="images/uploads/product-image-4.jpg" alt="" />
-                            <span class="mg-product-cart__name">Pyunkang Yul</span>
-                            <p class="mg-product-cart__desc">Эссенция-Тонер Essence Toner 200мл</p>
-                            <span class="mg-product-cart__price">1980<i class="mg-ruble">₽</i></span>
-                            <div class="mg-product-cart__btns">
-                                <a class="mg-btn mg-btn--transparent mg-product-cart__btn--like" href="#"><i class="mg-icon icon-heart"></i></a>
-                                <a class="mg-btn mg-btn--black mg-product-cart__btn--buy" href="#">Купить</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="mg-product-cart__wrapper">
-              <span class="mg-product-cart__labels">
-                <i class="mg-product-cart__label mg-product-cart__label--hit">ХИТ</i>
-                <i class="mg-product-cart__label mg-product-cart__label--sale">СКИДКА</i>
-              </span>
-                            <img class="mg-product-cart__image" src="images/uploads/product-image-1.jpg" alt="" />
-                            <span class="mg-product-cart__name">MEDI-PEEL</span>
-                            <p class="mg-product-cart__desc">Ампула с 24 каратным золотом Luxury 24K Gold Ampoule 100 мл</p>
-                            <span class="mg-product-cart__price mg-product-cart__price--sale"><span class="mg-product-cart__sale-price">5890<i class="mg-ruble">₽</i></span>3890<i class="mg-ruble">₽</i></span>
-                            <div class="mg-product-cart__btns">
-                                <a class="mg-btn mg-btn--transparent mg-product-cart__btn--like" href="#"><i class="mg-icon icon-heart"></i></a>
-                                <a class="mg-btn mg-btn--black mg-product-cart__btn--buy" href="#">Купить</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="mg-product-cart__wrapper">
-                            <img class="mg-product-cart__image" src="images/uploads/product-image-2.jpg" alt="" />
-                            <span class="mg-product-cart__name">JM Solution</span>
-                            <p class="mg-product-cart__desc">Honey Luminous Royal Propolis Mask 10p</p>
-                            <span class="mg-product-cart__price">1980<i class="mg-ruble">₽</i></span>
-                            <div class="mg-product-cart__btns">
-                                <a class="mg-btn mg-btn--transparent mg-product-cart__btn--like" href="#"><i class="mg-icon icon-heart"></i></a>
-                                <a class="mg-btn mg-btn--black mg-product-cart__btn--buy" href="#">Купить</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="mg-product-cart__wrapper">
-              <span class="mg-product-cart__labels">
-                <i class="mg-product-cart__label mg-product-cart__label--new">НОВИНКА</i>
-                <i class="mg-product-cart__label mg-product-cart__label--top">ЛИДЕР ПРОДАЖ</i>
-              </span>
-                            <img class="mg-product-cart__image" src="images/uploads/product-image-3.jpg" alt="" />
-                            <span class="mg-product-cart__name">mizon</span>
-                            <p class="mg-product-cart__desc">Средство против прыщей Acence Blemish Out Pink Spot 30мл</p>
-                            <span class="mg-product-cart__price">1980<i class="mg-ruble">₽</i></span>
-                            <div class="mg-product-cart__btns">
-                                <a class="mg-btn mg-btn--transparent mg-product-cart__btn--like" href="#"><i class="mg-icon icon-heart"></i></a>
-                                <a class="mg-btn mg-btn--black mg-product-cart__btn--buy" href="#">Купить</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="mg-product-cart__wrapper">
-              <span class="mg-product-cart__labels">
-                <i class="mg-product-cart__label mg-product-cart__label--popular">ВЫБОР КОСМЕТОЛОГОВ</i>
-                <i class="mg-product-cart__label mg-product-cart__label--promo">НАШ ВЫБОР</i>
-              </span>
-                            <img class="mg-product-cart__image" src="images/uploads/product-image-4.jpg" alt="" />
-                            <span class="mg-product-cart__name">Pyunkang Yul</span>
-                            <p class="mg-product-cart__desc">Эссенция-Тонер Essence Toner 200мл</p>
-                            <span class="mg-product-cart__price">1980<i class="mg-ruble">₽</i></span>
-                            <div class="mg-product-cart__btns">
-                                <a class="mg-btn mg-btn--transparent mg-product-cart__btn--like" href="#"><i class="mg-icon icon-heart"></i></a>
-                                <a class="mg-btn mg-btn--black mg-product-cart__btn--buy" href="#">Купить</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="mg-product-cart__wrapper">
-              <span class="mg-product-cart__labels">
-                <i class="mg-product-cart__label mg-product-cart__label--hit">ХИТ</i>
-                <i class="mg-product-cart__label mg-product-cart__label--sale">СКИДКА</i>
-              </span>
-                            <img class="mg-product-cart__image" src="images/uploads/product-image-1.jpg" alt="" />
-                            <span class="mg-product-cart__name">MEDI-PEEL</span>
-                            <p class="mg-product-cart__desc">Ампула с 24 каратным золотом Luxury 24K Gold Ampoule 100 мл</p>
-                            <span class="mg-product-cart__price mg-product-cart__price--sale"><span class="mg-product-cart__sale-price">5890<i class="mg-ruble">₽</i></span>3890<i class="mg-ruble">₽</i></span>
-                            <div class="mg-product-cart__btns">
-                                <a class="mg-btn mg-btn--transparent mg-product-cart__btn--like" href="#"><i class="mg-icon icon-heart"></i></a>
-                                <a class="mg-btn mg-btn--black mg-product-cart__btn--buy" href="#">Купить</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="mg-product-cart__wrapper">
-                            <img class="mg-product-cart__image" src="images/uploads/product-image-2.jpg" alt="" />
-                            <span class="mg-product-cart__name">JM Solution</span>
-                            <p class="mg-product-cart__desc">Honey Luminous Royal Propolis Mask 10p</p>
-                            <span class="mg-product-cart__price">1980<i class="mg-ruble">₽</i></span>
-                            <div class="mg-product-cart__btns">
-                                <a class="mg-btn mg-btn--transparent mg-product-cart__btn--like" href="#"><i class="mg-icon icon-heart"></i></a>
-                                <a class="mg-btn mg-btn--black mg-product-cart__btn--buy" href="#">Купить</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="mg-product-cart__wrapper">
-              <span class="mg-product-cart__labels">
-                <i class="mg-product-cart__label mg-product-cart__label--new">НОВИНКА</i>
-                <i class="mg-product-cart__label mg-product-cart__label--top">ЛИДЕР ПРОДАЖ</i>
-              </span>
-                            <img class="mg-product-cart__image" src="images/uploads/product-image-3.jpg" alt="" />
-                            <span class="mg-product-cart__name">mizon</span>
-                            <p class="mg-product-cart__desc">Средство против прыщей Acence Blemish Out Pink Spot 30мл</p>
-                            <span class="mg-product-cart__price">1980<i class="mg-ruble">₽</i></span>
-                            <div class="mg-product-cart__btns">
-                                <a class="mg-btn mg-btn--transparent mg-product-cart__btn--like" href="#"><i class="mg-icon icon-heart"></i></a>
-                                <a class="mg-btn mg-btn--black mg-product-cart__btn--buy" href="#">Купить</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="mg-product-cart__wrapper">
-              <span class="mg-product-cart__labels">
-                <i class="mg-product-cart__label mg-product-cart__label--popular">ВЫБОР КОСМЕТОЛОГОВ</i>
-                <i class="mg-product-cart__label mg-product-cart__label--promo">НАШ ВЫБОР</i>
-              </span>
-                            <img class="mg-product-cart__image" src="images/uploads/product-image-4.jpg" alt="" />
-                            <span class="mg-product-cart__name">Pyunkang Yul</span>
-                            <p class="mg-product-cart__desc">Эссенция-Тонер Essence Toner 200мл</p>
-                            <span class="mg-product-cart__price">1980<i class="mg-ruble">₽</i></span>
-                            <div class="mg-product-cart__btns">
-                                <a class="mg-btn mg-btn--transparent mg-product-cart__btn--like" href="#"><i class="mg-icon icon-heart"></i></a>
-                                <a class="mg-btn mg-btn--black mg-product-cart__btn--buy" href="#">Купить</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="mg-product-cart__wrapper">
-              <span class="mg-product-cart__labels">
-                <i class="mg-product-cart__label mg-product-cart__label--hit">ХИТ</i>
-                <i class="mg-product-cart__label mg-product-cart__label--sale">СКИДКА</i>
-              </span>
-                            <img class="mg-product-cart__image" src="images/uploads/product-image-1.jpg" alt="" />
-                            <span class="mg-product-cart__name">MEDI-PEEL</span>
-                            <p class="mg-product-cart__desc">Ампула с 24 каратным золотом Luxury 24K Gold Ampoule 100 мл</p>
-                            <span class="mg-product-cart__price mg-product-cart__price--sale"><span class="mg-product-cart__sale-price">5890<i class="mg-ruble">₽</i></span>3890<i class="mg-ruble">₽</i></span>
-                            <div class="mg-product-cart__btns">
-                                <a class="mg-btn mg-btn--transparent mg-product-cart__btn--like" href="#"><i class="mg-icon icon-heart"></i></a>
-                                <a class="mg-btn mg-btn--black mg-product-cart__btn--buy" href="#">Купить</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="mg-product-cart__wrapper">
-                            <img class="mg-product-cart__image" src="images/uploads/product-image-2.jpg" alt="" />
-                            <span class="mg-product-cart__name">JM Solution</span>
-                            <p class="mg-product-cart__desc">Honey Luminous Royal Propolis Mask 10p</p>
-                            <span class="mg-product-cart__price">1980<i class="mg-ruble">₽</i></span>
-                            <div class="mg-product-cart__btns">
-                                <a class="mg-btn mg-btn--transparent mg-product-cart__btn--like" href="#"><i class="mg-icon icon-heart"></i></a>
-                                <a class="mg-btn mg-btn--black mg-product-cart__btn--buy" href="#">Купить</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="mg-product-cart__wrapper">
-              <span class="mg-product-cart__labels">
-                <i class="mg-product-cart__label mg-product-cart__label--new">НОВИНКА</i>
-                <i class="mg-product-cart__label mg-product-cart__label--top">ЛИДЕР ПРОДАЖ</i>
-              </span>
-                            <img class="mg-product-cart__image" src="images/uploads/product-image-3.jpg" alt="" />
-                            <span class="mg-product-cart__name">mizon</span>
-                            <p class="mg-product-cart__desc">Средство против прыщей Acence Blemish Out Pink Spot 30мл</p>
-                            <span class="mg-product-cart__price">1980<i class="mg-ruble">₽</i></span>
-                            <div class="mg-product-cart__btns">
-                                <a class="mg-btn mg-btn--transparent mg-product-cart__btn--like" href="#"><i class="mg-icon icon-heart"></i></a>
-                                <a class="mg-btn mg-btn--black mg-product-cart__btn--buy" href="#">Купить</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="mg-product-cart__wrapper">
-              <span class="mg-product-cart__labels">
-                <i class="mg-product-cart__label mg-product-cart__label--popular">ВЫБОР КОСМЕТОЛОГОВ</i>
-                <i class="mg-product-cart__label mg-product-cart__label--promo">НАШ ВЫБОР</i>
-              </span>
-                            <img class="mg-product-cart__image" src="images/uploads/product-image-4.jpg" alt="" />
-                            <span class="mg-product-cart__name">Pyunkang Yul</span>
-                            <p class="mg-product-cart__desc">Эссенция-Тонер Essence Toner 200мл</p>
-                            <span class="mg-product-cart__price">1980<i class="mg-ruble">₽</i></span>
-                            <div class="mg-product-cart__btns">
-                                <a class="mg-btn mg-btn--transparent mg-product-cart__btn--like" href="#"><i class="mg-icon icon-heart"></i></a>
-                                <a class="mg-btn mg-btn--black mg-product-cart__btn--buy" href="#">Купить</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="mg-product-content__info d-none d-lg-block">
-                    {block name='page_header_container'}
-                        {block name='page_header'}
-                            <h1>{block name='page_title'}{$product.name}{/block}</h1>
-                        {/block}
-                    {/block}
-                    {block name='product_description_short'}
-                        <div class="my-2">{$product.description_short nofilter}</div>
-                    {/block}
-                    <div class="d-flex align-items-center">
-                        <div class="mg-main-customers__item-rating d-inline-flex ml-0"><i class="active"></i><i class="active"></i><i class="active"></i><i class="active"></i><i></i></div>
-                        <span class="mg-text-grey mr-3">Отзывы ({$reviewList.total})</span>
-                        <a class="mg-text-grey" href="#" data-revws-entity-type="product"  data-revws-create-trigger="{$product.id}">Добавить отзыв</a>
-                    </div>
-                    <div class="my-3 mg-price">1980<i class="mg-ruble">₽</i></div>
-                </div>
-                <div class="mg-order__colors">
-                    <a class="mg-order__color mg-order__color--boss-pink" href="#"><span class="mg-text">Boss Pink</span></a>
-                    <a class="mg-order__color mg-order__color--boss-pink" href="#"><span class="mg-text">Boss Pink</span></a>
-                    <a class="mg-order__color mg-order__color--boss-pink" href="#"><span class="mg-text">Boss Pink</span></a>
-                    <a class="mg-order__color mg-order__color--boss-pink" href="#"><span class="mg-text">Boss Pink</span></a>
-                    <a class="mg-order__color mg-order__color--boss-pink" href="#"><span class="mg-text">Boss Pink</span></a>
-                    <a class="mg-order__color mg-order__color--boss-pink" href="#"><span class="mg-text">Boss Pink</span></a>
-                    <a class="mg-order__color mg-order__color--boss-pink" href="#"><span class="mg-text">Boss Pink</span></a>
-                    <a class="mg-order__color mg-order__color--boss-pink" href="#"><span class="mg-text">Boss Pink</span></a>
-                    <a class="mg-order__color mg-order__color--boss-pink" href="#"><span class="mg-text">Boss Pink</span></a>
-                    <a class="mg-order__color mg-order__color--boss-pink" href="#"><span class="mg-text">Boss Pink</span></a>
-                    <a class="mg-order__color mg-order__color--boss-pink" href="#"><span class="mg-text">Boss Pink</span></a>
-                    <a class="mg-order__color mg-order__color--boss-pink" href="#"><span class="mg-text">Boss Pink</span></a>
-                </div>
-
-                {block name='product_add_to_cart'}
-                    {include file='catalog/_partials/product-add-to-cart.tpl'}
-                {/block}
-
-
-                <ul class="nav nav-tabs mg-product-nav" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="about-tab" data-toggle="tab" href="#mgAbout" role="tab" aria-controls="about" aria-selected="true">Описание товара</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="info-tab" data-toggle="tab" href="#mgInfo" role="tab" aria-controls="info" aria-selected="false">состав / хранение</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="brand-tab" data-toggle="tab" href="#mgBrand" role="tab" aria-controls="brand" aria-selected="false">о бренде</a>
-                    </li>
-                </ul>
-                <div class="tab-content">
-                    <div class="tab-pane fade show active" id="mgAbout" role="tabpanel" aria-labelledby="about-tab">
-                        <div class="mg-tab-info">
-                            <p>ROUGE HOLIC дополнит ваш образ, наполнив губы насыщенным, глубоким, ярким оттенком.<br/><b>1.</b> Насыщенный цвет, точно такой же как на картинке<br/>Благодаря сильному пигменту, помада передает настоящий цвет<br/> и добавляет потрясающего блеска губам.<br/><b>2.</b> Кремовая тающая текстура<br/>Нежная текстура подобна СС крему равно мерно ложиться и обладает высокой стойкостью.<br/><b>3.</b> Глубокий, стойкий цвет и блеск<br/>Высокоэластичная текстура с высокоглянцевыми полимерами, обеспечивают стойкость цвета и блеск.<br/><b>4.</b> Глубокое увлажнение<br/>Входящий в состав овощной сквален интенсивно увлажает нежную кожу губ, предотвращает потерю влаги и делает их увлажненными<br/>и гладкими в течение длительного времени.<br/><b>5.</b> Современный дизайн<br/>Дизайн вдохновлен образом Сеульских модниц, очаровательных<br/>и утонченных.</p>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="mgInfo" role="tabpanel" aria-labelledby="info-tab">
-                        <div class="mg-tab-info">
-                            <p>ROUGE HOLIC дополнит ваш образ, наполнив губы насыщенным, глубоким, ярким оттенком.<br/><b>1.</b> Насыщенный цвет, точно такой же как на картинке<br/>Благодаря сильному пигменту полимерами, обеспечивают стойкость цвета и блеск.<br/><b>4.</b> Глубокое увлажнение<br/>Входящий в состав овощной сквален интенсивно увлажает нежную кожу губ, предотвращает потерю влаги и делает их увлажненными<br/>и гладкими в течение длительного времени.<br/><b>5.</b> Современный дизайн<br/>Дизайн вдохновлен образом Сеульских модниц, очаровательных<br/>и утонченных.</p>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="mgBrand" role="tabpanel" aria-labelledby="brand-tab">
-                        <div class="mg-tab-info">
-                            <p>ROUGE HOLIC дополнит ваш образ, наполнив губы насыщенным, глубоким, ярким оттенком.<br/>обладает высокой стойкостью.<br/><b>3.</b> Глубокий, стойкий цвет и блеск<br/>Высокоэластичная текстура с высокоглянцевыми полимерами, обеспечивают стойкость цвета и блеск.<br/><b>4.</b> Глубокое увлажнение<br/>Входящий в состав овощной сквален интенсивно увлажает нежную кожу губ, предотвращает потерю влаги и делает их увлажненными<br/>и гладкими в течение длительного времени.<br/><b>5.</b> Современный дизайн<br/>Дизайн вдохновлен образом Сеульских модниц, очаровательных<br/>и утонченных.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr class="mt-5">
-    </div>
-</section>
-
     <section class="mg-product-content" id="main" itemscope itemtype="https://schema.org/Product">
         <meta itemprop="url" content="{$product.url}">
         <div class="container">
@@ -437,6 +95,17 @@
                         {block name='product_description_short'}
                             <div class="my-2">{$product.description_short nofilter}</div>
                         {/block}
+                        <div class="d-flex align-items-center">
+                            <div class="mg-main-customers__item-rating d-inline-flex ml-0">
+                                <i class="active"></i>
+                                <i class="active"></i>
+                                <i class="active"></i>
+                                <i class="active"></i>
+                                <i></i>
+                            </div>
+                            <span class="mg-text-grey mr-3">Отзывы (2)</span>
+                            <a class="mg-text-grey" href="#">Добавить отзыв</a>
+                        </div>
                         <div class="d-flex align-items-center">
                             <span class="mg-text-grey mr-3">Отзывы ({$reviewList.total})</span>
                             <a class="mg-btn ml-3" href="#" data-revws-entity-type="product" data-revws-create-trigger="{$product.id}"><b>Добавить отзыв</b></a>
@@ -488,6 +157,7 @@
                             <li class="nav-item">
                                 <a class="nav-link{if !$product.description} active{/if}" id="info-tab" data-toggle="tab" href="#mgInfo" role="tab" aria-controls="info" {if !$product.description} aria-selected="true"{/if}>{l s='Product Details' d='Shop.Theme.Catalog'}</a>
                             </li>
+
                             {if $product.attachments}
                                 <li class="nav-item">
                                     <a class="nav-link" data-toggle="tab" href="#attachments" role="tab" aria-controls="attachments">{l s='Attachments' d='Shop.Theme.Catalog'}</a>
@@ -498,9 +168,20 @@
                                     <a class="nav-link" data-toggle="tab" href="#extra-{$extraKey}" role="tab" aria-controls="extra-{$extraKey}">{$extra.title}</a>
                                 </li>
                             {/foreach}
+                            {hook h='displayProductTabCustom'}
+                            <li class="nav-item">
+                                <a class="nav-link" id="brand-tab" data-toggle="tab" href="#mgBrand" role="tab" aria-controls="brand" aria-selected="false">о бренде</a>
+                            </li>
                         </ul>
                     {/block}
                     <div class="tab-content">
+
+                        <div class="tab-pane fade" id="mgBrand" role="tabpanel" aria-labelledby="brand-tab">
+                            <div class="mg-tab-info">
+                                <p>ROUGE HOLIC дополнит ваш образ, наполнив губы насыщенным, глубоким, ярким оттенком.<br/>обладает высокой стойкостью.<br/><b>3.</b> Глубокий, стойкий цвет и блеск<br/>Высокоэластичная текстура с высокоглянцевыми полимерами, обеспечивают стойкость цвета и блеск.<br/><b>4.</b> Глубокое увлажнение<br/>Входящий в состав овощной сквален интенсивно увлажает нежную кожу губ, предотвращает потерю влаги и делает их увлажненными<br/>и гладкими в течение длительного времени.<br/><b>5.</b> Современный дизайн<br/>Дизайн вдохновлен образом Сеульских модниц, очаровательных<br/>и утонченных.</p>
+                            </div>
+                        </div>
+                        {hook h='displayProductTabContentCustom'}
                         <div class="tab-pane fade show{if $product.description} active{/if}" id="mgAbout" role="tabpanel" aria-labelledby="about-tab">
                             <div class="mg-tab-info">
                                 {block name='product_description'}

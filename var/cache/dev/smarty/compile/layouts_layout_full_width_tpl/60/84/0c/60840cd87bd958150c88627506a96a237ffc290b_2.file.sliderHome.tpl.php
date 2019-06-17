@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-16 18:22:12
+/* Smarty version 3.1.33, created on 2019-06-17 05:34:03
   from '/home/padilo00/padilo.pro/presta/themes/classic/templates/_partials/sliderHome.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d065ea4e9d735_87234773',
+  'unifunc' => 'content_5d06fc1b5aa488_57970201',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d065ea4e9d735_87234773 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d06fc1b5aa488_57970201 (Smarty_Internal_Template $_smarty_tpl) {
 ?><section class="mg-main-popular">
   <div class="container">
     <h2>Бестселлеры</h2>

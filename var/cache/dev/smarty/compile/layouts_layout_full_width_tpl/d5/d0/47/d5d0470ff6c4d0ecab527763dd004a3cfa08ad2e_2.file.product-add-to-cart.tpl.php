@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-15 16:25:28
+/* Smarty version 3.1.33, created on 2019-06-17 04:52:48
   from '/home/padilo00/padilo.pro/presta/themes/classic/templates/catalog/_partials/product-add-to-cart.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d04f1c85881c4_36747250',
+  'unifunc' => 'content_5d06f2701772d8_99277681',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,10 +20,10 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d04f1c85881c4_36747250 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d06f2701772d8_99277681 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_18474623465d04f1c8578fb5_46164947', 'product_quantity');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_8652672125d06f2701698e8_20502386', 'product_quantity');
 ?>
 
 
@@ -35,12 +35,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_18474623465d04f1c8
 
 <?php }
 /* {block 'product_quantity'} */
-class Block_18474623465d04f1c8578fb5_46164947 extends Smarty_Internal_Block
+class Block_8652672125d06f2701698e8_20502386 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_quantity' => 
   array (
-    0 => 'Block_18474623465d04f1c8578fb5_46164947',
+    0 => 'Block_8652672125d06f2701698e8_20502386',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

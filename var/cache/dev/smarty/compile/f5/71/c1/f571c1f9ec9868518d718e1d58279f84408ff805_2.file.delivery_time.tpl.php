@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-16 18:24:46
+/* Smarty version 3.1.33, created on 2019-06-17 05:36:03
   from '/home/padilo00/padilo.pro/presta/modules/cdek/views/templates/hook/delivery_time.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d065f3e52da95_91735058',
+  'unifunc' => 'content_5d06fc93b62221_11117344',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d065f3e52da95_91735058 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d06fc93b62221_11117344 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="cdek_delivery_date_block clearfix">
 

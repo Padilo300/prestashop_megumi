@@ -45,11 +45,13 @@
 {*      {/foreach}*}
       <link rel="stylesheet" href="/themes/classic/assets/stylesheets/fonts.css" type="text/css" media="all">
       <link rel="stylesheet" href="/themes/classic/assets/stylesheets/bootstrap.min.css" type="text/css" media="all">
-      <link rel="stylesheet" href="/themes/classic/assets/stylesheets/slick.css" type="text/css"/>
+{*      <link rel="stylesheet" href="/themes/classic/assets/stylesheets/slick.css" type="text/css"/>*}
       <link rel="stylesheet" href="/themes/classic/assets/stylesheets/base.css" type="text/css" media="all">
       <link rel="stylesheet" href="/themes/classic/assets/stylesheets/media.css" type="text/css" media="all">
       <link rel="stylesheet" href="/themes/classic/assets/css/custom.css" type="text/css" media="all">
 {*      <link rel="stylesheet" href="/themes/classic/assets/css/theme.css" type="text/css" media="all">*}
+
+      <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
       <link rel="stylesheet" href="/js/jquery/ui/themes/base/minified/jquery-ui.min.css" type="text/css" media="all">
       <link rel="stylesheet" href="/js/jquery/ui/themes/base/minified/jquery.ui.theme.min.css" type="text/css" media="all">
 

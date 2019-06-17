@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-16 18:23:23
+/* Smarty version 3.1.33, created on 2019-06-17 04:58:14
   from '/home/padilo00/padilo.pro/presta/modules/smartblog/views/templates/admin/addjs.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d065eeb4a4727_34329246',
+  'unifunc' => 'content_5d06f3b6d6a327_47511269',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d065eeb4a4727_34329246 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d06f3b6d6a327_47511269 (Smarty_Internal_Template $_smarty_tpl) {
 ?><style>
 .icon-AdminSmartBlog:before{
   content: "\f14b";

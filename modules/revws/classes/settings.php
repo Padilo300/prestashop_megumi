@@ -1,6 +1,6 @@
 <?php
 /**
-* Copyright (C) 2017-2018 Petr Hucik <petr@getdatakick.com>
+* Copyright (C) 2017-2019 Petr Hucik <petr@getdatakick.com>
 *
 * NOTICE OF LICENSE
 *
@@ -13,7 +13,7 @@
 * to license@getdatakick.com so we can send you a copy immediately.
 *
 * @author    Petr Hucik <petr@getdatakick.com>
-* @copyright 2017-2018 Petr Hucik
+* @copyright 2017-2019 Petr Hucik
 * @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 */
 
@@ -21,6 +21,10 @@ namespace Revws;
 use \Configuration;
 use \Language;
 use \Exception;
+use \DateTime;
+use \DateInterval;
+use \Db;
+use \DbQuery;
 
 class Settings {
   const APP_URL = 'REVWS_APP_URL';
@@ -30,6 +34,7 @@ class Settings {
   const SETTINGS = 'REVWS_SETTINGS';
   const VERSION = 'REVWS_VERSION';
   const ACTIVATED = 'REVWS_ACTIVATED';
+  const REVIEWED = 'REVWS_REVIEWED';
   const CHECK_VERSION = 'REVWS_CHECK_VERSION';
 
   private $data;
@@ -103,6 +108,7 @@ class Settings {
         'allowGuestReviews' => true,
         'allowReviewWithoutCriteria' => false,
         'allowEmpty' => true,
+        'allowEmptyTitle' => false,
         'allowDelete' => true,
         'allowEdit' => true,
         'allowVoting' => true,
@@ -145,6 +151,7 @@ class Settings {
   }
 
   public function init() {
+    static::getInstallationDate();
     return $this->set(self::getDefaultSettings());
   }
 
@@ -292,6 +299,10 @@ class Settings {
     return $this->toBool($this->get(['review', 'allowEmpty']));
   }
 
+  public function allowEmptyTitle() {
+    return $this->toBool($this->get(['review', 'allowEmptyTitle']));
+  }
+
   public function showOnProductComparison() {
     return $this->toBool($this->get(['display', 'productComparison', 'show']));
   }
@@ -422,6 +433,29 @@ class Settings {
 
   public function setActivated() {
     Configuration::updateGlobalValue(self::ACTIVATED, 'free');
+  }
+
+  public function shouldReview() {
+    $reviewed = static::toBool(Configuration::getGlobalValue(self::REVIEWED));
+    if ($reviewed) {
+      return false;
+    }
+    $now = new DateTime();
+    $threshold = static::getInstallationDate()->add(DateInterval::createfromdatestring('+1 day'));
+    return $now > $threshold;
+  }
+
+  public function setReviewed() {
+    Configuration::updateGlobalValue(self::REVIEWED, '1');
+  }
+
+  public function getInstallationDate() {
+    $sql = (new DbQuery())
+      ->select('MIN(date_add)')
+      ->from('configuration')
+      ->where('name LIKE "REVWS_%"');
+    $date = Db::getInstance()->getValue($sql);
+    return new DateTime($date);
   }
 
   public function setCheckModuleVersion($version, $ts, $notes, $paid) {

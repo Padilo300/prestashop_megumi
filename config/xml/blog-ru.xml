@@ -6,6 +6,30 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>3 challenges to expand your logistics internationally</title>
+    <link>https://www.prestashop.com/en/blog/expand-your-logistics-internationally</link>
+    <description>Do you know that many businesses face loss due to inefficiency to meet customers demand on time?</description>
+     <pubDate>Wed, 26 Jun 2019 10:38:00 +0200</pubDate>
+ <dc:creator>Webkul</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/expand-your-logistics-internationally</guid>
+  </item>
+  <item>
+    <title>5 Ways To Manage Your After Sales Service Effectively</title>
+    <link>https://www.prestashop.com/en/blog/ecommerce-after-sales-service</link>
+    <description>If you have ever worked in real-world retail as opposed to eCommerce, you may have heard it said that just one negative customer experience is a sure way to lose ten customers!</description>
+     <pubDate>Fri, 21 Jun 2019 15:27:07 +0200</pubDate>
+ <dc:creator>Teapot</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/ecommerce-after-sales-service</guid>
+  </item>
+  <item>
+    <title>5 Marketing Content Mistakes to Avoid</title>
+    <link>https://www.prestashop.com/en/blog/marketing-content-ecommerce</link>
+    <description>The amount of data we produce each day is truly mind-blowing. It’s hard to stand out with your content when there are 2.5 quintillion bytes of data created every day.</description>
+     <pubDate>Thu, 20 Jun 2019 10:43:17 +0200</pubDate>
+ <dc:creator>Invertus</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/marketing-content-ecommerce</guid>
+  </item>
+  <item>
     <title>New! Manage all your payment options securely from a single interface with PrestaShop Checkout</title>
     <link>https://www.prestashop.com/en/blog/prestashop-checkout</link>
     <description>Don’t wait to try out PrestaShop Checkout Built with PayPal, the innovative payment solution launched by PrestaShop to boost your e-commerce activity!</description>
@@ -60,30 +84,6 @@
      <pubDate>Thu, 16 May 2019 17:33:36 +0200</pubDate>
  <dc:creator>Teapot</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/7-necessary-steps-to-launch-your-ecommerce-shop</guid>
-  </item>
-  <item>
-    <title>Recovery of abandoned carts: The 4 best practices in 2019</title>
-    <link>https://www.prestashop.com/en/blog/recovery-of-abandoned-carts-tips-advices</link>
-    <description>More than 68% of visitors leave their carts before finalizing a purchase. They visited your website, placed an item in the cart, and then left your site without buying!</description>
-     <pubDate>Fri, 10 May 2019 17:18:27 +0200</pubDate>
- <dc:creator>Carts Guru EN</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/recovery-of-abandoned-carts-tips-advices</guid>
-  </item>
-  <item>
-    <title>Going global</title>
-    <link>https://www.prestashop.com/en/blog/international-going-global-NS8</link>
-    <description>Expanding into new markets can be confusing and difficult. Here are some areas to research before deciding the next steps for your business.</description>
-     <pubDate>Thu, 09 May 2019 10:31:55 +0200</pubDate>
- <dc:creator>JackieLong</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/international-going-global-NS8</guid>
-  </item>
-  <item>
-    <title>Interview of Nathan, user of a 2019 PrestaShop Addons Awards winning module</title>
-    <link>https://www.prestashop.com/en/blog/interview-immersivedisplay-prestashop-protectmyshop-productivity</link>
-    <description>Following the 2019 PrestaShop Addons Awards, </description>
-     <pubDate>Mon, 06 May 2019 16:01:10 +0200</pubDate>
- <dc:creator>priberolle</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/interview-immersivedisplay-prestashop-protectmyshop-productivity</guid>
   </item>
   </channel>
 </rss>

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-28 21:42:19
+/* Smarty version 3.1.33, created on 2019-06-29 19:02:24
   from '/home/padilo00/padilo.pro/presta/modules/smartblogsearch/views/templates/front/smartblogsearch.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ced810b6cf6e5_89708592',
+  'unifunc' => 'content_5d178b90075566_26962275',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ced810b6cf6e5_89708592 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d178b90075566_26962275 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="block block-blog blogModule boxPlain clearfix" id="smartblogsearch">
       <h4 class="text-uppercase h6 hidden-sm-down"><a href='<?php echo htmlspecialchars(smartblog::GetSmartBlogLink('smartblog_list'), ENT_QUOTES, 'UTF-8');?>
 '><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>"Blog Search",'mod'=>"smartblogsearch"),$_smarty_tpl ) );?>

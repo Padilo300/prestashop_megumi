@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-28 21:42:19
+/* Smarty version 3.1.33, created on 2019-06-29 19:02:24
   from '/home/padilo00/padilo.pro/presta/modules/smartblogcategories/category-tree-branch.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ced810b5053e1_89127171',
+  'unifunc' => 'content_5d178b9004e1a2_80021707',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:./category-tree-branch.tpl' => 3,
   ),
 ),false)) {
-function content_5ced810b5053e1_89127171 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d178b9004e1a2_80021707 (Smarty_Internal_Template $_smarty_tpl) {
 ?>		<?php if ($_smarty_tpl->tpl_vars['node']->value['name'] == '') {?>
 				<?php if (count($_smarty_tpl->tpl_vars['node']->value['children']) > 0) {?>
 					<?php

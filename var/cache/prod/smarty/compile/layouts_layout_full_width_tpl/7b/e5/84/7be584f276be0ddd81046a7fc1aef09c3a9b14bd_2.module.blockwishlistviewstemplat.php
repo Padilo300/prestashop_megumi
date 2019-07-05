@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-28 19:58:05
+/* Smarty version 3.1.33, created on 2019-06-27 07:00:38
   from 'module:blockwishlistviewstemplat' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ced689d5db596_24034970',
+  'unifunc' => 'content_5d143f66e37dd7_95963804',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7be584f276be0ddd81046a7fc1aef09c3a9b14bd' => 
     array (
       0 => 'module:blockwishlistviewstemplat',
-      1 => 1558984671,
+      1 => 1560141467,
       2 => 'module',
     ),
   ),
@@ -20,70 +20,73 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ced689d5db596_24034970 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d143f66e37dd7_95963804 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_19380431375ced689d561748_20146250', 'breadcrumb_item');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_7367466355d143f66e10bb3_22772034', 'breadcrumb_item');
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_9462476455ced689d56ab92_85415017', "content");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_10045590575d143f66e11f19_71900981', "content");
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, ((string)$_smarty_tpl->tpl_vars['layout']->value));
 }
 /* {block 'breadcrumb_item'} */
-class Block_19380431375ced689d561748_20146250 extends Smarty_Internal_Block
+class Block_7367466355d143f66e10bb3_22772034 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'breadcrumb_item' => 
   array (
-    0 => 'Block_19380431375ced689d561748_20146250',
+    0 => 'Block_7367466355d143f66e10bb3_22772034',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
-	<?php 
-$_smarty_tpl->inheritance->callParent($_smarty_tpl, $this, '{$smarty.block.parent}');
-?>
-
-	<li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-	  <a itemprop="item" href="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['url'][0], array( array('entity'=>'module','name'=>'blockwishlist','controller'=>'mywishlist'),$_smarty_tpl ) );?>
-">
-	    <span itemprop="name"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Wishlist','mod'=>'blockwishlist'),$_smarty_tpl ) );?>
-</span>
-	  </a>
-	</li>	
+			  	    	  	
 <?php
 }
 }
 /* {/block 'breadcrumb_item'} */
 /* {block "content"} */
-class Block_9462476455ced689d56ab92_85415017 extends Smarty_Internal_Block
+class Block_10045590575d143f66e11f19_71900981 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_9462476455ced689d56ab92_85415017',
+    0 => 'Block_10045590575d143f66e11f19_71900981',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/home/padilo00/padilo.pro/presta/vendor/smarty/smarty/libs/plugins/modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 ?>
 
+	<div class="">
+		<span class="mg-profile__title" id="customer_name"></span>
+		<div class="mg-profile__menu">
+			<a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['pages']['history'], ENT_QUOTES, 'UTF-8');?>
+"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Order history and details','d'=>'Shop.Theme.Customeraccount'),$_smarty_tpl ) );?>
+</a>
+
+			<a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['pages']['addresses'], ENT_QUOTES, 'UTF-8');?>
+"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Addresses','d'=>'Shop.Theme.Customeraccount'),$_smarty_tpl ) );?>
+</a>
+
+			<a class="active" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['pages']['identity'], ENT_QUOTES, 'UTF-8');?>
+">  <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Information','d'=>'Shop.Theme.Customeraccount'),$_smarty_tpl ) );?>
+</a>
+			<a href="/module/blockwishlist/mywishlist">Избранное</a>
+			<a href="reviews/my-reviews"> Вопросы и ответы</a>
+		</div>
+	</div>
 <!--front/mywishlist.tpl-->
 <div id="main">
-	<h1 class="hed-tit">
-		<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'New wishlist','mod'=>'blockwishlist'),$_smarty_tpl ) );?>
-
-	</h1>
-
+				
 	<div id="mywishlist">
-
 		<?php if (isset($_smarty_tpl->tpl_vars['errors']->value) && $_smarty_tpl->tpl_vars['errors']->value) {?>
 			<div class="alert alert-danger" role="alert">
 				<ol>
@@ -103,28 +106,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 		<?php }?>
 
 		<?php if (intval($_smarty_tpl->tpl_vars['id_customer']->value) != 0) {?>
-			<form method="post" class="std box" id="form_wishlist">
-				<fieldset>
-					<div class="form-group">
-						<input type="hidden" name="token" value="<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['token']->value,'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
-" />
-						<label class="align_right" for="name">
-							<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Name','mod'=>'blockwishlist'),$_smarty_tpl ) );?>
-
-						</label>
-						<input type="text" id="name" name="name" class="inputTxt form-control" value="<?php if (isset($_POST['name']) && count($_smarty_tpl->tpl_vars['errors']->value) > 0) {
-echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_POST['name'],'html','UTF-8' )), ENT_QUOTES, 'UTF-8');
-}?>" />
-					</div>
-					<p class="submit">
-	                    <button id="submitWishlist" class="btn btn-default button button-medium" type="submit" name="submitWishlist">
-	                    	<span><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Save','mod'=>'blockwishlist'),$_smarty_tpl ) );?>
-<i class="icon-chevron-right right"></i></span>
-	                    </button>
-					</p>
-				</fieldset>
-			</form>
-			<?php if ($_smarty_tpl->tpl_vars['wishlists']->value) {?>
+																																																																		                    	                    		                    															<?php if ($_smarty_tpl->tpl_vars['wishlists']->value) {?>
 				<div id="block-history" class="block-center">
 					<table class="table table-bordered">
 						<thead>
@@ -225,6 +207,11 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 					</table>
 				</div>
 				<div id="block-order-detail">&nbsp;</div>
+				<?php } else { ?>
+				<div class="mg-favorite__none-text">
+					<p><strong>Сейчас у вас нет товаров в Избранном</strong></p>
+					<p>Чтобы добавить понравившийся товар в «Избранное» нужно нажать <i class="mg-icon icon-heart"></i> рядом с ним. Список понравившихся товаров всегда хранится в разделе «Избранное».</p>
+				</div>
 			<?php }?>
 		<?php }?>
 	</div>

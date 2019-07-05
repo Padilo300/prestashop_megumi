@@ -28,6 +28,11 @@
     </div>
 {/block}
 
+<style>
+    .mg-product-content__image-thumbs li{
+        margin: 3px 0;
+    }
+</style>
 {block name='product_images'}
     <div class="mg-product-content__image-thumbs">
         <ul>

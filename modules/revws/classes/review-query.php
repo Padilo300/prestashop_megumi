@@ -1,6 +1,6 @@
 <?php
 /**
-* Copyright (C) 2017-2018 Petr Hucik <petr@getdatakick.com>
+* Copyright (C) 2017-2019 Petr Hucik <petr@getdatakick.com>
 *
 * NOTICE OF LICENSE
 *
@@ -13,7 +13,7 @@
 * to license@getdatakick.com so we can send you a copy immediately.
 *
 * @author    Petr Hucik <petr@getdatakick.com>
-* @copyright 2017-2018 Petr Hucik
+* @copyright 2017-2019 Petr Hucik
 * @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 */
 
@@ -240,12 +240,12 @@ class ReviewQuery {
   }
 
   private function getUsefulnessSubselect() {
-    return "(
+    return "COALESCE((
       SELECT (SUM(CASE WHEN react.reaction_type = 'vote_up' THEN 1 ELSE 0 END) - SUM(CASE WHEN react.reaction_type = 'vote_down' THEN 1 ELSE 0 END))
         FROM " . _DB_PREFIX_ . "revws_review_reaction react
         WHERE react.id_review = r.id_review
           AND react.reaction_type IN ('vote_up', 'vote_down')
-    )";
+    ), 0)";
   }
 
 

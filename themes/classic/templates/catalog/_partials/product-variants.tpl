@@ -30,8 +30,9 @@
     flex-wrap: wrap;
     padding: 0;
   }
-  .pa_listColor > li{
+  .pa_listColor > li label{
     margin: 5px 5px 5px 0;
+    cursor: pointer;
   }
   .pa_listColor-item{
     border: 1px solid #EAEAEA;

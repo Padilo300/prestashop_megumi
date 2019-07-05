@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-17 07:14:36
+/* Smarty version 3.1.33, created on 2019-07-05 13:56:10
   from '/home/padilo00/padilo.pro/presta/modules/ps_mbo/views/templates/admin/toolbar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d0713ac59f805_60869669',
+  'unifunc' => 'content_5d1f2cca08edb5_29565492',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d0713ac59f805_60869669 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d1f2cca08edb5_29565492 (Smarty_Internal_Template $_smarty_tpl) {
 ?> 
 <?php if (!$_smarty_tpl->tpl_vars['isSymfonyContext']->value) {?>
     <li style="display:none;">

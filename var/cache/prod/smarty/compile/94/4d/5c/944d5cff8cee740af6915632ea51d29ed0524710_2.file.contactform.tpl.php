@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-28 21:42:19
+/* Smarty version 3.1.33, created on 2019-06-20 10:18:47
   from '/home/padilo00/padilo.pro/presta/themes/classic/modules/contactform/views/templates/widget/contactform.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ced810b1b7e78_02866887',
+  'unifunc' => 'content_5d0b33574ee632_76804594',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '944d5cff8cee740af6915632ea51d29ed0524710' => 
     array (
       0 => '/home/padilo00/padilo.pro/presta/themes/classic/modules/contactform/views/templates/widget/contactform.tpl',
-      1 => 1558969070,
+      1 => 1559670445,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ced810b1b7e78_02866887 (Smarty_Internal_Template $_smarty_tpl) {
-?><section class="contact-form">
+function content_5d0b33574ee632_76804594 (Smarty_Internal_Template $_smarty_tpl) {
+?>
+<section class="contact-form">
   <form action="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['pages']['contact'], ENT_QUOTES, 'UTF-8');?>
 " method="post" <?php if ($_smarty_tpl->tpl_vars['contact']->value['allow_file_upload']) {?>enctype="multipart/form-data"<?php }?>>
 
@@ -53,31 +54,24 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
           </div>
         </div>
 
-        <div class="form-group row">
+        <div class="form-group row" style="display: none!important;">
           <label class="col-md-3 form-control-label"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Subject','d'=>'Shop.Forms.Labels'),$_smarty_tpl ) );?>
 </label>
           <div class="col-md-6">
             <select name="id_contact" class="form-control form-control-select">
-              <?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['contact']->value['contacts'], 'contact_elt');
-if ($_from !== null) {
-foreach ($_from as $_smarty_tpl->tpl_vars['contact_elt']->value) {
-?>
-                <option value="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['contact_elt']->value['id_contact'], ENT_QUOTES, 'UTF-8');?>
-"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['contact_elt']->value['name'], ENT_QUOTES, 'UTF-8');?>
-</option>
-              <?php
-}
-}
-$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+                <option value="1"></option>
             </select>
           </div>
         </div>
-
-        <div class="form-group row">
-          <label class="col-md-3 form-control-label"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Email address','d'=>'Shop.Forms.Labels'),$_smarty_tpl ) );?>
+        <style>
+          .nopaddingleft{
+            padding-left: 0!important;
+          }
+        </style>
+        <div class="mg-fieldset">
+          <label class="nopaddingleft col-md-3 form-control-label"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Email address','d'=>'Shop.Forms.Labels'),$_smarty_tpl ) );?>
 </label>
-          <div class="col-md-6">
+          <div class="nopaddingleft col-md-9">
             <input
               class="form-control"
               name="from"
@@ -91,7 +85,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         </div>
 
         <?php if ($_smarty_tpl->tpl_vars['contact']->value['orders']) {?>
-          <div class="form-group row">
+          <div class="mg-fieldset">
             <label class="col-md-3 form-control-label"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Order reference','d'=>'Shop.Forms.Labels'),$_smarty_tpl ) );?>
 </label>
             <div class="col-md-6">
@@ -119,25 +113,10 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
           </div>
         <?php }?>
 
-        <?php if ($_smarty_tpl->tpl_vars['contact']->value['allow_file_upload']) {?>
-          <div class="form-group row">
-            <label class="col-md-3 form-control-label"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Attachment','d'=>'Shop.Forms.Labels'),$_smarty_tpl ) );?>
+        <div class="mg-fieldset">
+          <label class="nopaddingleft col-md-3 form-control-label"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Message','d'=>'Shop.Forms.Labels'),$_smarty_tpl ) );?>
 </label>
-            <div class="col-md-6">
-              <input type="file" name="fileUpload" class="filestyle" data-buttonText="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Choose file','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
-">
-            </div>
-            <span class="col-md-3 form-control-comment">
-              <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'optional','d'=>'Shop.Forms.Help'),$_smarty_tpl ) );?>
-
-            </span>
-          </div>
-        <?php }?>
-
-        <div class="form-group row">
-          <label class="col-md-3 form-control-label"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Message','d'=>'Shop.Forms.Labels'),$_smarty_tpl ) );?>
-</label>
-          <div class="col-md-9">
+          <div class="nopaddingleft col-md-9">
             <textarea
               class="form-control"
               name="message"
@@ -150,18 +129,10 @@ echo htmlspecialchars($_smarty_tpl->tpl_vars['contact']->value['message'], ENT_Q
           </div>
         </div>
 
-        <?php if (isset($_smarty_tpl->tpl_vars['id_module']->value)) {?>
-          <div class="form-group row">
-            <div class="offset-md-3">
-              <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>'displayGDPRConsent','id_module'=>$_smarty_tpl->tpl_vars['id_module']->value),$_smarty_tpl ) );?>
-
-            </div>
-          </div>
-        <?php }?>
 
       </section>
 
-      <footer class="form-footer text-sm-right">
+      <footer class="form-footer text-sm-right" style="display: flex;justify-content: left">
         <style>
           input[name=url] {
             display: none !important;
@@ -170,12 +141,12 @@ echo htmlspecialchars($_smarty_tpl->tpl_vars['contact']->value['message'], ENT_Q
         <input type="text" name="url" value=""/>
         <input type="hidden" name="token" value="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['token']->value, ENT_QUOTES, 'UTF-8');?>
 " />
-        <input class="btn btn-primary" type="submit" name="submitMessage" value="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Send','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
+        <input class="mg-btn mg-btn--black w-100 w-lg-auto" type="submit" name="submitMessage" value="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Send','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
 ">
       </footer>
     <?php }?>
 
   </form>
 </section>
-<?php }
+<div style="height: 20px"></div><?php }
 }

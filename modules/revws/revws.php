@@ -1,6 +1,6 @@
 <?php
 /**
-* Copyright (C) 2017-2018 Petr Hucik <petr@getdatakick.com>
+* Copyright (C) 2017-2019 Petr Hucik <petr@getdatakick.com>
 *
 * NOTICE OF LICENSE
 *
@@ -13,7 +13,7 @@
 * to license@getdatakick.com so we can send you a copy immediately.
 *
 * @author    Petr Hucik <petr@getdatakick.com>
-* @copyright 2017-2018 Petr Hucik
+* @copyright 2017-2019 Petr Hucik
 * @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 */
 
@@ -60,7 +60,7 @@ class Revws extends Module {
   public function __construct() {
     $this->name = 'revws';
     $this->tab = 'administration';
-    $this->version = '1.0.23';
+    $this->version = '1.1.0';
     $this->author = 'DataKick';
     $this->need_instance = 0;
     $this->bootstrap = true;
@@ -119,7 +119,8 @@ class Revws extends Module {
       'displayRevwsAverageRating',
       'registerGDPRConsent',
       'actionDeleteGDPRCustomer',
-      'actionExportGDPRData'
+      'actionExportGDPRData',
+      'actionGetConseqsTriggers',
     ]);
   }
 
@@ -340,7 +341,7 @@ class Revws extends Module {
       }
       $content = $this->display(__FILE__, 'product_tab_content.tpl');
       $tab = new PrestaShop\PrestaShop\Core\Product\ProductExtraContent();
-      $tab->setTitle($this->l('Reviews'));
+      $tab->setTitle(sprintf($this->l('Reviews (%s)'), $list->getTotal()));
       $tab->setContent($content);
       return [ $tab ];
     } else {
@@ -352,6 +353,7 @@ class Revws extends Module {
     $set = $this->getSettings();
     if ($set->getPlacement() === 'block') {
       $list = $this->getProductReviewList();
+      $this->context->smarty->assign('revwsTotal', $list->getTotal());
       if ($list->isEmpty() && $this->getVisitor()->isGuest() && $set->hideEmptyReviews()) {
         return;
       }
@@ -375,7 +377,7 @@ class Revws extends Module {
     $this->csrf();
     $controller = $this->context->controller;
     $this->includeCommonStyles($controller);
-    $controller->registerJavascript('revws-front', '/modules/revws/views/js/revws-bootstrap-1_0_23.js', ['position' => 'bottom', 'priority' => 1]);
+    $controller->registerJavascript('revws-front', '/modules/revws/views/js/revws-bootstrap-1_1_0.js', ['position' => 'bottom', 'priority' => 1]);
     return $this->addCanonicalTags($this->context->controller->php_self);
   }
 
@@ -745,9 +747,9 @@ class Revws extends Module {
     return $link;
   }
 
-  public function getLoginUrl() {
+  public function getLoginUrl($productId) {
     return $this->context->link->getPageLink('authentication', true, null, [
-      'back' => ''
+      'back' => $this->getProductReviewsLink($productId)
     ]);
   }
 
@@ -847,10 +849,22 @@ class Revws extends Module {
     return $this->frontApp;
   }
 
-  public function hookDisplayBeforeBodyClosingTag() {
-    if ($this->frontApp) {
-      echo '<script type="text/javascript">var revwsData='.json_encode($this->frontApp).';</script>';
-    }
+  public function hookDisplayBeforeBodyClosingTag()
+  {
+      if ($this->frontApp) {
+          echo '<script type="text/javascript">var revwsData=' . json_encode($this->frontApp) . ';</script>';
+      }
+  }
+
+  public function hookActionGetConseqsTriggers()
+  {
+    require_once(__DIR__ . '/classes/integration/conseqs-trigger.php');
+    return [
+        'reviewCreated' => new \Revws\ConseqsTrigger($this->l('Revws: Review created'), $this->l('Executed when review is created'), 'actionRevwsReviewCreated'),
+        'reviewUpdated' => new \Revws\ConseqsTrigger($this->l('Revws: Review updated'), $this->l('Executed when review is updated'), 'actionRevwsReviewUpdated'),
+        'reviewDeleted' => new \Revws\ConseqsTrigger($this->l('Revws: Review deleted'), $this->l('Executed when review is deleted'), 'actionRevwsReviewDeleted'),
+        'reviewApproved' => new \Revws\ConseqsTrigger($this->l('Revws: Review approved'), $this->l('Executed when review is approved'), 'actionRevwsReviewApproved')
+    ];
   }
 
   private static function getProductId($product) {

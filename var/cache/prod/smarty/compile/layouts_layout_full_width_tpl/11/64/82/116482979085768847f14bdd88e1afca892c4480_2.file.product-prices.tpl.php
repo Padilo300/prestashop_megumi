@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-17 06:57:15
+/* Smarty version 3.1.33, created on 2019-07-05 05:38:10
   from '/home/padilo00/padilo.pro/presta/themes/classic/templates/catalog/_partials/product-prices.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d070f9b218ee7_34310166',
+  'unifunc' => 'content_5d1eb81225ef84_56506152',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d070f9b218ee7_34310166 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d1eb81225ef84_56506152 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -28,19 +28,19 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 
 <?php if ($_smarty_tpl->tpl_vars['product']->value['show_price']) {?>
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1727201065d070f9b216ea4_36400101', 'product_discount');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_6255476495d1eb81225d064_84727240', 'product_discount');
 ?>
 
 <?php }?>
 
 <?php }
 /* {block 'product_discount'} */
-class Block_1727201065d070f9b216ea4_36400101 extends Smarty_Internal_Block
+class Block_6255476495d1eb81225d064_84727240 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_discount' => 
   array (
-    0 => 'Block_1727201065d070f9b216ea4_36400101',
+    0 => 'Block_6255476495d1eb81225d064_84727240',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

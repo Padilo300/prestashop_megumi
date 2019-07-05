@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-17 06:57:15
+/* Smarty version 3.1.33, created on 2019-07-05 05:38:10
   from '/home/padilo00/padilo.pro/presta/themes/classic/templates/catalog/_partials/product-variants.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d070f9b23fd73_97864091',
+  'unifunc' => 'content_5d1eb812283475_61474369',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '93b19e027ea2edf0f26c00b15e5bfd501986de98' => 
     array (
       0 => '/home/padilo00/padilo.pro/presta/themes/classic/templates/catalog/_partials/product-variants.tpl',
-      1 => 1560742212,
+      1 => 1560750264,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d070f9b23fd73_97864091 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d1eb812283475_61474369 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <style>
   .pa_listColor{
@@ -29,8 +29,9 @@ function content_5d070f9b23fd73_97864091 (Smarty_Internal_Template $_smarty_tpl)
     flex-wrap: wrap;
     padding: 0;
   }
-  .pa_listColor > li{
+  .pa_listColor > li label{
     margin: 5px 5px 5px 0;
+    cursor: pointer;
   }
   .pa_listColor-item{
     border: 1px solid #EAEAEA;

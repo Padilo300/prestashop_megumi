@@ -19,18 +19,6 @@
 
 {block name='page_content'}
 <div id="myreviews">
-    <div class="">
-        <span class="mg-profile__title" id="customer_name"></span>
-        <div class="mg-profile__menu">
-            <a href="{$urls.pages.history}">{l s='Order history and details' d='Shop.Theme.Customeraccount'}</a>
-
-            <a href="{$urls.pages.addresses}">{l s='Addresses' d='Shop.Theme.Customeraccount'}</a>
-
-            <a class="active" href="{$urls.pages.identity}">  {l s='Information' d='Shop.Theme.Customeraccount'}</a>
-            <a href="/module/blockwishlist/mywishlist">Избранное</a>
-            <a href="reviews/my-reviews"> Вопросы и ответы</a>
-        </div>
-    </div>
   {include
     file='modules/revws/views/templates/hook/widget.tpl'
     widget=$widget

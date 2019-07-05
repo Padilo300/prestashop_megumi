@@ -1,6 +1,6 @@
 <?php
 /**
-* Copyright (C) 2017-2018 Petr Hucik <petr@getdatakick.com>
+* Copyright (C) 2017-2019 Petr Hucik <petr@getdatakick.com>
 *
 * NOTICE OF LICENSE
 *
@@ -13,7 +13,7 @@
 * to license@getdatakick.com so we can send you a copy immediately.
 *
 * @author    Petr Hucik <petr@getdatakick.com>
-* @copyright 2017-2018 Petr Hucik
+* @copyright 2017-2019 Petr Hucik
 * @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 */
 
@@ -37,6 +37,7 @@ class AppTranslation {
        "Close" => $this->l('Close'),
        "Could you review these products?" => $this->l('Could you review these products?'),
        "Create review" => $this->l('Create review'),
+       "Customer didn't write any details" => $this->l('Customer didn\'t write any details'),
        "Delete review" => $this->l('Delete review'),
        "Edit review" => $this->l('Edit review'),
        "Failed to create review" => $this->l('Failed to create review'),
@@ -100,6 +101,7 @@ class AppTranslation {
       "Allow reviews for products without review criteria" => $this->l('Allow reviews for products without review criteria'),
       "Allow reviews with images" => $this->l('Allow reviews with images'),
       "Allow reviews without details" => $this->l('Allow reviews without details'),
+      "Allow reviews without title" => $this->l('Allow reviews without title'),
       "Applies to %s categories and %s products" => $this->l('Applies to %s categories and %s products'),
       "Applies to %s products" => $this->l('Applies to %s products'),
       "Applies to entire catalog" => $this->l('Applies to entire catalog'),
@@ -133,6 +135,7 @@ class AppTranslation {
       "Custom placement" => $this->l('Custom placement'),
       "Custom" => $this->l('Custom'),
       "Customer account page" => $this->l('Customer account page'),
+      "Customer didn't write any details" => $this->l('Customer didn\'t write any details'),
       "Customer notifications" => $this->l('Customer notifications'),
       "Customer" => $this->l('Customer'),
       "Customers can upload new images" => $this->l('Customers can upload new images'),
@@ -186,6 +189,7 @@ class AppTranslation {
       "Guest visitor" => $this->l('Guest visitor'),
       "Help and support" => $this->l('Help and support'),
       "Hide review section when is empty" => $this->l('Hide review section when is empty'),
+      "How do you like this module?" => $this->l('How do you like this module?'),
       "I understand" => $this->l('I understand'),
       "ID" => $this->l('ID'),
       "Icon css class" => $this->l('Icon css class'),
@@ -292,6 +296,8 @@ class AppTranslation {
       "Support" => $this->l('Support'),
       "Tab" => $this->l('Tab'),
       "Thank you for installing free version of [1]Revws[/1] module. We are very happy to have you aboard." => $this->l('Thank you for installing free version of [1]Revws[/1] module. We are very happy to have you aboard.'),
+      "Thank you for using this [1]free[/1] module. We really hope it helped you increase trust, and sell more products." => $this->l('Thank you for using this [1]free[/1] module. We really hope it helped you increase trust, and sell more products.'),
+      "Thank you for your review" => $this->l('Thank you for your review'),
       "Theme and Appearance" => $this->l('Theme and Appearance'),
       "This action will delete all your curent reviews and criteria settings!" => $this->l('This action will delete all your curent reviews and criteria settings!'),
       "This is an [1]open source[/1] project released under the [2]AFL 3.0[/2] license. That means you are free to use, modify, and copy this software in any way you wish." => $this->l('This is an [1]open source[/1] project released under the [2]AFL 3.0[/2] license. That means you are free to use, modify, and copy this software in any way you wish.'),
@@ -319,9 +325,11 @@ class AppTranslation {
       "We have detected following problems. This module might not work correctly unless they are fixed" => $this->l('We have detected following problems. This module might not work correctly unless they are fixed'),
       "We need your permission to contact you in [1]emergency[/1] situations, for example if we discover a serious [2]security[/2] bug" => $this->l('We need your permission to contact you in [1]emergency[/1] situations, for example if we discover a serious [2]security[/2] bug'),
       "We promise that we will [1]not disclose[/1] your email address to anyone or use it to [2]spam[/2] you. We will not send you automated [3]marketing[/3] emails unless you [4]opt-in[/4] for it.[5][/5]You can read our [6]privacy policy[/6] here." => $this->l('We promise that we will [1]not disclose[/1] your email address to anyone or use it to [2]spam[/2] you. We will not send you automated [3]marketing[/3] emails unless you [4]opt-in[/4] for it.[5][/5]You can read our [6]privacy policy[/6] here.'),
+      "We would like to ask you a [1]favor[/1]. If you like this module, could you please write [2]short review[/2] on our store? Thank you in advance!" => $this->l('We would like to ask you a [1]favor[/1]. If you like this module, could you please write [2]short review[/2] on our store? Thank you in advance!'),
       "What emails can we send you?" => $this->l('What emails can we send you?'),
       "What to approve" => $this->l('What to approve'),
       "When no review exists for product" => $this->l('When no review exists for product'),
+      "Write review" => $this->l('Write review'),
       "Write your answer" => $this->l('Write your answer'),
       "Yes" => $this->l('Yes'),
       "You can contact me" => $this->l('You can contact me'),

@@ -219,7 +219,9 @@ class smartblog extends Module
             default:
                 $id_post = pSQL(Tools::getvalue('id_post'));
         }
+
         if($id_post){
+
             $obj_post = new SmartBlogPost($id_post, true, $this->context->language->id, $this->context->shop->id);
             $meta_title = $obj_post->meta_title;
             $meta_keyword = $obj_post->meta_keyword;

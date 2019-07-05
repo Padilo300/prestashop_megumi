@@ -1,6 +1,6 @@
 <?php
 /**
-* Copyright (C) 2017-2018 Petr Hucik <petr@getdatakick.com>
+* Copyright (C) 2017-2019 Petr Hucik <petr@getdatakick.com>
 *
 * NOTICE OF LICENSE
 *
@@ -13,7 +13,7 @@
 * to license@getdatakick.com so we can send you a copy immediately.
 *
 * @author    Petr Hucik <petr@getdatakick.com>
-* @copyright 2017-2018 Petr Hucik
+* @copyright 2017-2019 Petr Hucik
 * @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 */
 
@@ -64,12 +64,14 @@ class AdminRevwsBackendController extends ModuleAdminController {
           'activated' => $settings->isActivated(),
           'version' => $this->module->version,
           'versionUrl' => $settings->getVersionUrl(),
+          'shouldReview' => $settings->shouldReview(),
           'api' => $this->context->link->getAdminLink('AdminRevwsBackend'),
           'shopName' => Configuration::get('PS_SHOP_NAME'),
           'baseUrl' => $this->getPath(''),
           'shapes' => Shapes::getAvailableShapes(),
           'languages' => $languages,
           'language' => $lang,
+          'isRtl' => !!$this->context->language->is_rtl,
           'platform' => $platform,
           'platformVersion' => $platformVersion,
           'dateFormat' => $this->context->language->date_format_lite,
@@ -155,6 +157,8 @@ class AdminRevwsBackendController extends ModuleAdminController {
         return $this->export();
       case 'setLatestVersion':
         return $this->setLatestVersion($payload);
+      case 'setReviewed':
+        return $this->setReviewed();
       default:
         throw new Exception("Unknown command $cmd");
     }
@@ -401,6 +405,11 @@ class AdminRevwsBackendController extends ModuleAdminController {
     }
     $paid = isset($data['paid']) ? $data['paid'] : null;
     $this->module->getSettings()->setCheckModuleVersion($data['version'], $data['ts'], $data['notes'], $paid);
+    return true;
+  }
+
+  private function setReviewed() {
+    $this->module->getSettings()->setReviewed();
     return true;
   }
 

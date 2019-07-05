@@ -50,7 +50,10 @@
     <section class="mg-product-content" id="main" itemscope itemtype="https://schema.org/Product">
         <meta itemprop="url" content="{$product.url}">
         <div class="container">
+
+            {hook h='displayRevwsReview'}
             <div class="row">
+
                 <div class="col-lg-6">
                     <div class="mg-product-content__info d-block d-lg-none">
                         {block name='page_header_container'}
@@ -84,6 +87,7 @@
 
                     {hook h='displayProductincat' product=$product}
 
+
                 </div>
                 <div class="col-lg-6">
                     <div class="mg-product-content__info d-none d-lg-block">
@@ -106,10 +110,10 @@
                             <span class="mg-text-grey mr-3">Отзывы (2)</span>
                             <a class="mg-text-grey" href="#">Добавить отзыв</a>
                         </div>
-                        <div class="d-flex align-items-center">
-                            <span class="mg-text-grey mr-3">Отзывы ({$reviewList.total})</span>
-                            <a class="mg-btn ml-3" href="#" data-revws-entity-type="product" data-revws-create-trigger="{$product.id}"><b>Добавить отзыв</b></a>
-                        </div>
+{*                        <div class="d-flex align-items-center">*}
+{*                            <span class="mg-text-grey mr-3">Отзывы ({$reviewList.total})</span>*}
+{*                            <a class="mg-btn ml-3" href="#" data-revws-entity-type="product" data-revws-create-trigger="{$product.id}"><b>Добавить отзыв</b></a>*}
+{*                        </div>*}
                         {block name='product_prices'}
                             {include file='catalog/_partials/product-prices.tpl'}
                         {/block}
@@ -302,14 +306,18 @@
         {block name='product_footer'}
             {hook h='displayFooterProduct' product=$product category=$category}
         {/block}
-
+        {foreach from=$product.extraContent item=extra key=extraKey}
+            <div class="tab-pane fade in {$extra.attr.class}" id="extra-{$extraKey}" role="tabpanel" {foreach $extra.attr as $key => $val} {$key}="{$val}"{/foreach}>
+            {$extra.content nofilter}
+            </div>
+        {/foreach}
         {block name='product_images_modal'}
             {include file='catalog/_partials/product-images-modal.tpl'}
         {/block}
 
         {block name='page_footer_container'}
             <footer class="page-footer">
-                {block name='page_footer'} 
+                {block name='page_footer'}
                     <!-- Footer content -->
                 {/block}
             </footer>

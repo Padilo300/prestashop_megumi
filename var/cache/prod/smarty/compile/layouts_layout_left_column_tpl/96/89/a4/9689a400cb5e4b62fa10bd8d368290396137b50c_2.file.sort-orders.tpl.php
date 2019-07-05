@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-28 21:42:19
+/* Smarty version 3.1.33, created on 2019-07-05 05:38:08
   from '/home/padilo00/padilo.pro/presta/themes/classic/templates/catalog/_partials/sort-orders.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ced810b789da2_88591746',
+  'unifunc' => 'content_5d1eb8101c1dc8_53040042',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9689a400cb5e4b62fa10bd8d368290396137b50c' => 
     array (
       0 => '/home/padilo00/padilo.pro/presta/themes/classic/templates/catalog/_partials/sort-orders.tpl',
-      1 => 1558969069,
+      1 => 1559561923,
       2 => 'file',
     ),
   ),
@@ -20,44 +20,58 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ced810b789da2_88591746 (Smarty_Internal_Template $_smarty_tpl) {
-?><span class="col-sm-3 col-md-3 hidden-sm-down sort-by"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Sort by:','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
-</span>
-<div class="<?php if (!empty($_smarty_tpl->tpl_vars['listing']->value['rendered_facets'])) {?>col-sm-9 col-xs-8<?php } else { ?>col-sm-12 col-xs-12<?php }?> col-md-9 products-sort-order dropdown">
-  <button
-    class="btn-unstyle select-title"
-    rel="nofollow"
-    data-toggle="dropdown"
-    aria-haspopup="true"
-    aria-expanded="false">
-    <?php if (isset($_smarty_tpl->tpl_vars['listing']->value['sort_selected'])) {
-echo htmlspecialchars($_smarty_tpl->tpl_vars['listing']->value['sort_selected'], ENT_QUOTES, 'UTF-8');
-} else {
-echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Select','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );
-}?>
-    <i class="material-icons float-xs-right">&#xE5C5;</i>
-  </button>
-  <div class="dropdown-menu">
-    <?php
+function content_5d1eb8101c1dc8_53040042 (Smarty_Internal_Template $_smarty_tpl) {
+?>
+    <div class="dropdown pa-sort">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Сортировать
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['listing']->value['sort_orders'], 'sort_order');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['sort_order']->value) {
 ?>
-      <a
-        rel="nofollow"
-        href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['sort_order']->value['url'], ENT_QUOTES, 'UTF-8');?>
+                <a
+                        rel="nofollow"
+                        href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['sort_order']->value['url'], ENT_QUOTES, 'UTF-8');?>
 "
-        class="select-list <?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'classnames' ][ 0 ], array( array('current'=>$_smarty_tpl->tpl_vars['sort_order']->value['current'],'js-search-link'=>true) )), ENT_QUOTES, 'UTF-8');?>
-"
-      >
-        <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['sort_order']->value['label'], ENT_QUOTES, 'UTF-8');?>
+                        class="dropdown-item "
+                >
+                    <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['sort_order']->value['label'], ENT_QUOTES, 'UTF-8');?>
 
-      </a>
-    <?php
+                </a>
+            <?php
 }
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-  </div>
-</div>
+        </div>
+    </div>
+<style>
+    .pa-sort.dropdown{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .pa-sort.dropdown  > a{
+        width: 250px !important;
+        background: transparent !important;
+        color: #495057 !important;
+        border-color: rgb(206, 212, 218) !important;
+        height: 38px !important;
+
+    }
+    .pa-sort.dropdown  > .dropdown-menu{
+        max-width: 250px !important;
+        background: #fff !important;
+        border: 1px solid rgb(206, 212, 218) !important;
+    }
+</style>
+
+
+
+
+
 <?php }
 }

@@ -24,7 +24,7 @@
  *}
 
 {foreach from=$products item="product"}
-  {include file="catalog/_partials/miniatures/product_slider_special.tpl" product=$product}
+  {include file="catalog/_partials/miniatures/product.tpl" product=$product}
 {/foreach}
 
 

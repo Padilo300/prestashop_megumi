@@ -296,7 +296,9 @@ a .revws-grading {
 /* product extra - right panel */
  #revws-product-extra,
  #revws-product-buttons,
+ #revws-product-custom-placement,
  .revws-product-extra-link,
+ .revws-product-custom-placement-link,
  .revws-product-buttons-link {
   display: flex;
   flex-direction: row;
@@ -305,9 +307,11 @@ a .revws-grading {
 
 #revws-product-extra b,
 #revws-product-buttons b,
+#revws-product-custom-placement b,
 .revws-product-list .revws-grading,
 .revws-comparison .revws-grading,
 .revws-product-buttons-link .revws-grading,
+.revws-product-custom-placement-link .revws-grading,
 .revws-product-extra-link .revws-grading {
   margin-right: 10px;
   flex-grow: 0;
@@ -659,10 +663,20 @@ a .revws-grading {
     align-items: center;
 }
 
+.revws-entity-image {
+  max-width: 100%;
+}
+
 .revws-review-entity-name a {
   text-decoration: none;
 }
 
 .revws-review-entity-name a:hover {
   text-decoration: underline;
+}
+
+.revws-review-without-details {
+  color: #999;
+  font-style: italic;
+  font-size: 85%;
 }

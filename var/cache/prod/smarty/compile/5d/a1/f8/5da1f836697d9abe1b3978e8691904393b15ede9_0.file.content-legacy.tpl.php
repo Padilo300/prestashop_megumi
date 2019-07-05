@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-28 23:21:18
+/* Smarty version 3.1.33, created on 2019-06-27 06:50:18
   from '/home/padilo00/padilo.pro/presta/admin5225jw75b/themes/default/template/controllers/modules/content-legacy.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ced983e5d2b28_69383469',
+  'unifunc' => 'content_5d143cfac0ff08_22672011',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:controllers/modules/page.tpl' => 1,
   ),
 ),false)) {
-function content_5ced983e5d2b28_69383469 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d143cfac0ff08_22672011 (Smarty_Internal_Template $_smarty_tpl) {
 if (isset($_smarty_tpl->tpl_vars['module_content']->value)) {?>
 	<?php echo $_smarty_tpl->tpl_vars['module_content']->value;?>
 

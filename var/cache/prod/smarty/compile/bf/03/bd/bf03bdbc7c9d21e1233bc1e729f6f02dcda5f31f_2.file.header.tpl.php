@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-17 06:57:22
+/* Smarty version 3.1.33, created on 2019-07-05 13:56:14
   from '/home/padilo00/padilo.pro/presta/modules/cdek/views/templates/hook/header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d070fa2a4ab00_82603174',
+  'unifunc' => 'content_5d1f2ccec89d17_15331673',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:./delivery_time.tpl' => 2,
   ),
 ),false)) {
-function content_5d070fa2a4ab00_82603174 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d1f2ccec89d17_15331673 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
 <?php echo '<script'; ?>

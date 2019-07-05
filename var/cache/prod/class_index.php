@@ -565,7 +565,7 @@
   ),
   'AdminOrdersController' => 
   array (
-    'path' => 'override/controllers/admin/AdminOrdersController.php',
+    'path' => '',
     'type' => 'class',
     'override' => false,
   ),
@@ -1975,7 +1975,7 @@
   ),
   'Dispatcher' => 
   array (
-    'path' => 'override/classes/Dispatcher.php',
+    'path' => '',
     'type' => 'class',
     'override' => false,
   ),

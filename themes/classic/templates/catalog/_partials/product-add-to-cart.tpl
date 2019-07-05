@@ -22,6 +22,8 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
+
+
 {block name='product_quantity'}
   <div class="d-flex justify-content-between align-items-center w-100 my-5">
       <div class="number-spinner mx-0">
@@ -29,7 +31,6 @@
         <input
                 type="text"
                 name="qty"
-                id="quantity_wanted"
                 value="{$product.quantity_wanted}"
                 class="pl-ns-value"
                 min="{$product.minimal_quantity}"
@@ -54,6 +55,7 @@
       </div>
   </div>
 {/block}
+
 
 {*
 
@@ -106,7 +108,7 @@
         {/if}
       </span>
     {/block}
-    
+
     {block name='product_minimal_quantity'}
       <p class="product-minimal-quantity">
         {if $product.minimal_quantity > 1}

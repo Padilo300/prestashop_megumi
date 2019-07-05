@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-17 06:24:25
+/* Smarty version 3.1.33, created on 2019-06-27 14:52:23
   from '/home/padilo00/padilo.pro/presta/themes/classic/templates/catalog/_partials/product-add-to-cart.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d0707e97b8a27_53223844',
+  'unifunc' => 'content_5d14adf7cddd40_07502954',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd5d0470ff6c4d0ecab527763dd004a3cfa08ad2e' => 
     array (
       0 => '/home/padilo00/padilo.pro/presta/themes/classic/templates/catalog/_partials/product-add-to-cart.tpl',
-      1 => 1559692430,
+      1 => 1560752517,
       2 => 'file',
     ),
   ),
@@ -20,11 +20,16 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d0707e97b8a27_53223844 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d14adf7cddd40_07502954 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15368466695d0707e97b4c71_26609450', 'product_quantity');
 ?>
+
+
+<?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5260149015d14adf7cda003_75172571', 'product_quantity');
+?>
+
 
 
 
@@ -35,12 +40,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15368466695d0707e9
 
 <?php }
 /* {block 'product_quantity'} */
-class Block_15368466695d0707e97b4c71_26609450 extends Smarty_Internal_Block
+class Block_5260149015d14adf7cda003_75172571 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_quantity' => 
   array (
-    0 => 'Block_15368466695d0707e97b4c71_26609450',
+    0 => 'Block_5260149015d14adf7cda003_75172571',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -52,7 +57,6 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
         <input
                 type="text"
                 name="qty"
-                id="quantity_wanted"
                 value="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['quantity_wanted'], ENT_QUOTES, 'UTF-8');?>
 "
                 class="pl-ns-value"

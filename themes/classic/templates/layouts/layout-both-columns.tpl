@@ -48,7 +48,7 @@
         {block name='header'}
           {include file='_partials/header.tpl'}
         {/block}
-        
+
       </header>
 
       {block name='notifications'}
